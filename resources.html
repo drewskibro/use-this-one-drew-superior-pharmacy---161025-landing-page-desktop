@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <title>Resources & Expert Insights | Superior Pharmacy</title>
+    <meta name="description" content="Expert insights on weight loss, heart health, and living your healthiest life. medically reviewed articles and guides from Superior Pharmacy." />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <link rel="stylesheet" href="resources.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#009689',
+              secondary: '#0077b6',
+              dark: '#282832',
+              light: '#f5f3f0',
+            },
+            fontFamily: {
+              serif: ['Playfair Display', 'serif'],
+              sans: ['Nunito Sans', 'sans-serif'],
+            }
+          },
+        },
+        plugins: [],
+      };
+    </script>
+  </head>
+  <body class="bg-white text-[#282832]">
+    
+
+    <!-- Navigation -->
+    <nav class="main-nav" role="navigation" aria-label="Main navigation">
+      <div class="nav-container">
+        <a href="index.html">
+          <img src="https://c.animaapp.com/mgyq65e6VP2ypA/img/cropped-superior-1.png" alt="Superior Pharmacy Logo" class="logo" />
+        </a>
+        
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <div class="nav-dropdown">
+            <button class="nav-dropdown-btn" aria-expanded="false" aria-haspopup="true">
+              About us
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="nav-dropdown-menu">
+              <a href="about.html">About Us</a>
+              <a href="resources.html" class="active-link">Resources</a>
+            </div>
+          </div>
+          <a href="weight-management.html">Weight Management</a>
+          <div class="nav-dropdown">
+            <button class="nav-dropdown-btn" aria-expanded="false" aria-haspopup="true">
+              Treatments
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="nav-dropdown-menu">
+              <a href="all-treatments.html">All treatments</a>
+              <a href="mounjaro.html">Mounjaro</a>
+              <a href="wegovy.html">Wegovy</a>
+              <a href="#switching-providers">Switching Providers</a>
+            </div>
+          </div>
+          <a href="contact.html">Contact Us</a>
+        </div>
+        
+        <button class="cta-button primary-cta desktop-cta" aria-label="Start your assessment" onclick="window.location.href='https://superior-pharmacy-we-z3k8.bolt.host/'">
+          Start Your Assessment
+          <img src="https://c.animaapp.com/mgyq65e6VP2ypA/img/arrowright.svg" alt="" aria-hidden="true" />
+        </button>
+        
+        <button class="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+      
+      <!-- Mobile Menu -->
+      <div class="mobile-menu">
+        <div class="mobile-menu-links">
+          <a href="index.html">Home</a>
+          <details class="mobile-dropdown">
+            <summary>About us</summary>
+            <div class="mobile-dropdown-content">
+              <a href="about.html">About Us</a>
+              <a href="resources.html" class="active-link">Resources</a>
+            </div>
+          </details>
+          <a href="weight-management.html">Weight Management</a>
+          <details class="mobile-dropdown">
+            <summary>Treatments</summary>
+            <div class="mobile-dropdown-content">
+              <a href="all-treatments.html">All treatments</a>
+              <a href="mounjaro.html">Mounjaro</a>
+              <a href="wegovy.html">Wegovy</a>
+              <a href="#switching-providers">Switching Providers</a>
+            </div>
+          </details>
+          <a href="contact.html">Contact Us</a>
+          <button class="cta-button primary-cta mobile-cta" onclick="window.location.href='https://superior-pharmacy-we-z3k8.bolt.host/'">
+            Start Your Assessment
+            <img src="https://c.animaapp.com/mgyq65e6VP2ypA/img/arrowright.svg" alt="" aria-hidden="true" />
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="relative py-20 md:py-24 overflow-hidden bg-[#eceae7]">
+      <!-- Background Elements -->
+      <div class="absolute inset-0 pointer-events-none">
+        <div class="absolute right-[-50%] bottom-[-50%] w-[200%] h-[150%] bg-[radial-gradient(circle,rgba(231,206,107,0.2)_0%,transparent_38%)]"></div>
+        <div class="absolute top-[-30%] left-[-50%] w-[120%] h-[90%] rounded-full bg-[radial-gradient(circle,rgba(0,151,178,0.15)_0%,transparent_38%)]"></div>
+      </div>
+      
+      <div class="max-w-4xl mx-auto px-6 relative z-10 text-center">
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border border-[#009689]/20 shadow-sm mb-6 animate-fade-in-up">
+          <span class="w-2 h-2 rounded-full bg-[#009689]"></span>
+          <span class="text-sm font-bold text-[#009689] tracking-wide uppercase font-sans">Health Hub</span>
+        </div>
+        
+        <h1 class="text-5xl md:text-6xl lg:text-7xl font-serif text-[#282832] mb-6 leading-tight animate-fade-in-up delay-100">
+          Expert insights on weight loss, heart health, and <span class="text-[#009689]">living your healthiest life</span>
+        </h1>
+        
+      </div>
+    </section>
+
+    <!-- FEATURED ARTICLE -->
+    <section class="py-12 md:py-20 bg-white border-y border-gray-100">
+      <div class="max-w-[1280px] mx-auto px-6">
+        <div class="bg-white rounded-[32px] p-8 md:p-12 shadow-[0_20px_40px_rgba(0,0,0,0.08)] border border-gray-100 overflow-hidden hover:shadow-[0_30px_60px_rgba(0,150,137,0.15)] transition-all duration-500 group">
+          <div class="grid lg:grid-cols-5 gap-12 items-center">
+            
+            <!-- Content -->
+            <div class="lg:col-span-3 order-2 lg:order-1">
+              <div class="flex items-center gap-3 mb-6">
+                <span class="px-3 py-1 bg-[#e0f2f1] text-[#009689] text-xs font-bold uppercase tracking-wider rounded-full font-sans">Medical Insight</span>
+                <span class="text-gray-400 text-sm font-sans font-medium">8 min read</span>
+              </div>
+              
+              <h2 class="text-3xl md:text-4xl lg:text-5xl font-serif text-[#282832] mb-6 leading-tight group-hover:text-[#009689] transition-colors">
+                Understanding GLP-1 Agonists: How Wegovy and Mounjaro Actually Work
+              </h2>
+              
+              <p class="text-lg text-[#495565] leading-relaxed mb-8 font-sans">
+                It's not just about suppressing appetite. These breakthrough medications mimic natural hormones to regulate blood sugar and digestion. Discover the science behind the most effective weight loss treatments available today.
+              </p>
+              
+              <div class="flex items-center justify-between border-t border-gray-100 pt-6">
+                <div class="flex items-center gap-3">
+                  <div class="w-12 h-12 rounded-full bg-gray-100 overflow-hidden border-2 border-white shadow-sm">
+                    <img src="https://c.animaapp.com/mgyq65e6VP2ypA/img/raman-sangha.png" alt="Raman Sangha" class="w-full h-full object-cover" />
+                  </div>
+                  <div class="text-sm font-sans">
+                    <p class="font-bold text-[#282832]">Raman Sangha</p>
+                    <p class="text-gray-500">Superintendent Pharmacist</p>
+                  </div>
+                </div>
+                
+                <button class="hidden md:flex items-center gap-2 text-[#009689] font-bold font-sans hover:text-[#007d72] transition-colors group/btn">
+                  Read Full Article
+                  <svg class="w-5 h-5 group-hover/btn:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                </button>
+              </div>
+            </div>
+            
+            <!-- Image -->
+            <div class="lg:col-span-2 order-1 lg:order-2 h-full min-h-[300px] lg:min-h-[400px] relative rounded-2xl overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&h=1000&fit=crop" alt="Medical research" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- IMPACT STATS -->
+    <section class="py-20 bg-[#f5f3f0]">
+      <div class="max-w-[1280px] mx-auto px-6">
+        <div class="text-center mb-16 section-header">
+          <div class="flex items-center justify-center gap-4 mb-6">
+            <div class="w-1 h-12 bg-[#009689] rounded-full"></div>
+            <div class="relative">
+              <p class="text-[#009689] text-sm md:text-base font-bold uppercase tracking-wider font-sans">CLINICAL EVIDENCE</p>
+            </div>
+          </div>
+          <h2 class="text-4xl md:text-5xl font-serif text-[#282832]">The Science of Success</h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Stat 1 -->
+          <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 text-center group">
+            <div class="text-5xl md:text-6xl font-serif font-bold text-[#009689] mb-4 group-hover:scale-110 transition-transform duration-300 inline-block">15%</div>
+            <h3 class="text-lg font-bold text-[#282832] mb-2 font-sans">Average Weight Loss</h3>
+            <p class="text-sm text-[#495565] font-sans">With Wegovy (Semaglutide)</p>
+          </div>
+
+          <!-- Stat 2 -->
+          <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 text-center group">
+            <div class="text-5xl md:text-6xl font-serif font-bold text-[#009689] mb-4 group-hover:scale-110 transition-transform duration-300 inline-block">20%</div>
+            <h3 class="text-lg font-bold text-[#282832] mb-2 font-sans">Average Weight Loss</h3>
+            <p class="text-sm text-[#495565] font-sans">With Mounjaro (Tirzepatide)</p>
+          </div>
+
+          <!-- Stat 3 -->
+          <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 text-center group">
+            <div class="text-5xl md:text-6xl font-serif font-bold text-[#009689] mb-4 group-hover:scale-110 transition-transform duration-300 inline-block">24h</div>
+            <h3 class="text-lg font-bold text-[#282832] mb-2 font-sans">Fast Delivery</h3>
+            <p class="text-sm text-[#495565] font-sans">Tracked Royal Mail shipping</p>
+          </div>
+
+          <!-- Stat 4 -->
+          <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 text-center group">
+            <div class="text-5xl md:text-6xl font-serif font-bold text-[#009689] mb-4 group-hover:scale-110 transition-transform duration-300 inline-block">5k+</div>
+            <h3 class="text-lg font-bold text-[#282832] mb-2 font-sans">Patients Helped</h3>
+            <p class="text-sm text-[#495565] font-sans">Across the UK</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ARTICLES GRID -->
+    <section class="py-20 bg-white">
+      <div class="max-w-[1280px] mx-auto px-6">
+        <div class="flex items-center justify-between mb-12">
+          <h2 class="text-3xl md:text-4xl font-serif text-[#282832]">Latest Articles</h2>
+          <a href="#" class="hidden md:flex items-center gap-2 text-[#009689] font-bold font-sans hover:text-[#007d72] transition-colors">
+            View All
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </a>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          
+          <!-- Article 1 -->
+          <article class="resource-card bg-white rounded-[24px] overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover-lift group cursor-pointer border border-gray-100" data-category="nutrition">
+            <div class="h-64 overflow-hidden relative">
+              <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=600&h=400&fit=crop" alt="Healthy food" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+              <div class="absolute top-4 left-4">
+                <span class="px-3 py-1 bg-white/90 backdrop-blur-sm text-[#009689] text-xs font-bold uppercase tracking-wider rounded-full shadow-sm font-sans">Nutrition</span>
+              </div>
+            </div>
+            <div class="p-8">
+              <h3 class="text-xl font-serif font-bold text-[#282832] mb-3 group-hover:text-[#009689] transition-colors">Eating for Longevity: The Mediterranean Diet Explained</h3>
+              <p class="text-[#495565] text-sm leading-relaxed mb-4 font-sans">Discover why this heart-healthy way of eating is consistently rated as one of the best diets for sustainable weight management.</p>
+              <div class="flex items-center text-xs text-gray-400 font-medium font-sans">
+                <span>5 min read</span>
+                <span class="mx-2">•</span>
+                <span>Nov 14, 2024</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Article 2 -->
+          <article class="resource-card bg-white rounded-[24px] overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover-lift group cursor-pointer border border-gray-100" data-category="weight-loss">
+            <div class="h-64 overflow-hidden relative">
+              <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=400&fit=crop" alt="Exercise" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+              <div class="absolute top-4 left-4">
+                <span class="px-3 py-1 bg-white/90 backdrop-blur-sm text-[#009689] text-xs font-bold uppercase tracking-wider rounded-full shadow-sm font-sans">Lifestyle</span>
+              </div>
+            </div>
+            <div class="p-8">
+              <h3 class="text-xl font-serif font-bold text-[#282832] mb-3 group-hover:text-[#009689] transition-colors">Movement vs. Exercise: Why Small Changes Matter</h3>
+              <p class="text-[#495565] text-sm leading-relaxed mb-4 font-sans">You don't need to run a marathon to see benefits. Learn how increasing your NEAT (Non-Exercise Activity Thermogenesis) burns calories.</p>
+              <div class="flex items-center text-xs text-gray-400 font-medium font-sans">
+                <span>6 min read</span>
+                <span class="mx-2">•</span>
+                <span>Nov 12, 2024</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Article 3 -->
+          <article class="resource-card bg-white rounded-[24px] overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover-lift group cursor-pointer border border-gray-100" data-category="weight-loss">
+            <div class="h-64 overflow-hidden relative">
+              <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&h=400&fit=crop" alt="Doctor consultation" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+              <div class="absolute top-4 left-4">
+                <span class="px-3 py-1 bg-white/90 backdrop-blur-sm text-[#009689] text-xs font-bold uppercase tracking-wider rounded-full shadow-sm font-sans">Medical</span>
+              </div>
+            </div>
+            <div class="p-8">
+              <h3 class="text-xl font-serif font-bold text-[#282832] mb-3 group-hover:text-[#009689] transition-colors">The Truth About Side Effects: Managing Nausea</h3>
+              <p class="text-[#495565] text-sm leading-relaxed mb-4 font-sans">Practical tips from our pharmacists on how to manage common side effects when starting GLP-1 medications like Wegovy.</p>
+              <div class="flex items-center text-xs text-gray-400 font-medium font-sans">
+                <span>7 min read</span>
+                <span class="mx-2">•</span>
+                <span>Nov 10, 2024</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Article 4 -->
+          <article class="resource-card bg-white rounded-[24px] overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover-lift group cursor-pointer border border-gray-100" data-category="success-stories">
+            <div class="h-64 overflow-hidden relative">
+              <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=600&h=400&fit=crop" alt="Success story" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+              <div class="absolute top-4 left-4">
+                <span class="px-3 py-1 bg-white/90 backdrop-blur-sm text-[#009689] text-xs font-bold uppercase tracking-wider rounded-full shadow-sm font-sans">Success Stories</span>
+              </div>
+            </div>
+            <div class="p-8">
+              <h3 class="text-xl font-serif font-bold text-[#282832] mb-3 group-hover:text-[#009689] transition-colors">Sarah's Journey: "I Finally Feel Like Myself Again"</h3>
+              <p class="text-[#495565] text-sm leading-relaxed mb-4 font-sans">After years of yo-yo dieting, Sarah found sustainable success with a combination of medication and lifestyle changes.</p>
+              <div class="flex items-center text-xs text-gray-400 font-medium font-sans">
+                <span>4 min read</span>
+                <span class="mx-2">•</span>
+                <span>Nov 05, 2024</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Article 5 -->
+          <article class="resource-card bg-white rounded-[24px] overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover-lift group cursor-pointer border border-gray-100" data-category="weight-loss">
+            <div class="h-64 overflow-hidden relative">
+              <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&h=400&fit=crop" alt="Sleep" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+              <div class="absolute top-4 left-4">
+                <span class="px-3 py-1 bg-white/90 backdrop-blur-sm text-[#009689] text-xs font-bold uppercase tracking-wider rounded-full shadow-sm font-sans">Wellness</span>
+              </div>
+            </div>
+            <div class="p-8">
+              <h3 class="text-xl font-serif font-bold text-[#282832] mb-3 group-hover:text-[#009689] transition-colors">Sleep and Weight Loss: The Missing Link</h3>
+              <p class="text-[#495565] text-sm leading-relaxed mb-4 font-sans">Why getting 7-9 hours of quality sleep is crucial for regulating hunger hormones and supporting your weight loss goals.</p>
+              <div class="flex items-center text-xs text-gray-400 font-medium font-sans">
+                <span>5 min read</span>
+                <span class="mx-2">•</span>
+                <span>Nov 01, 2024</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Article 6 -->
+          <article class="resource-card bg-white rounded-[24px] overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover-lift group cursor-pointer border border-gray-100" data-category="nutrition">
+            <div class="h-64 overflow-hidden relative">
+              <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=600&h=400&fit=crop" alt="Healthy cooking" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+              <div class="absolute top-4 left-4">
+                <span class="px-3 py-1 bg-white/90 backdrop-blur-sm text-[#009689] text-xs font-bold uppercase tracking-wider rounded-full shadow-sm font-sans">Recipes</span>
+              </div>
+            </div>
+            <div class="p-8">
+              <h3 class="text-xl font-serif font-bold text-[#282832] mb-3 group-hover:text-[#009689] transition-colors">5 High-Protein Breakfasts for Busy Mornings</h3>
+              <p class="text-[#495565] text-sm leading-relaxed mb-4 font-sans">Start your day right with these quick, delicious, and protein-packed recipes that keep you full until lunch.</p>
+              <div class="flex items-center text-xs text-gray-400 font-medium font-sans">
+                <span>6 min read</span>
+                <span class="mx-2">•</span>
+                <span>Oct 28, 2024</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+        
+        <div class="mt-12 text-center md:hidden">
+          <a href="#" class="inline-flex items-center gap-2 text-[#009689] font-bold font-sans hover:text-[#007d72] transition-colors">
+            View All Articles
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST BANNER -->
+    <section class="py-12 bg-[#e0f2f1] border-t border-[#b2dfdb]">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-[#009689] shadow-sm">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            </div>
+            <span class="font-bold text-[#282832] font-sans">GPhC Registered Pharmacy</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-[#009689] shadow-sm">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+            </div>
+            <span class="font-bold text-[#282832] font-sans">UK-Registered Prescribers</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-[#009689] shadow-sm">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            </div>
+            <span class="font-bold text-[#282832] font-sans">4.8/5 from 5,000+ Reviews</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="py-20 md:py-32 bg-[#282832] relative overflow-hidden">
+      <div class="absolute inset-0 opacity-10">
+        <div class="absolute inset-0" style="background-image: radial-gradient(circle at 2px 2px, white 2px, transparent 0); background-size: 60px 60px;"></div>
+      </div>
+      <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+        <h2 class="text-4xl lg:text-5xl text-white font-serif mb-6">Ready to Transform Your Health?</h2>
+        <p class="text-xl text-white/90 mb-10 max-w-2xl mx-auto font-sans">Start your medical weight loss journey with expert prescriber support and genuine UK medication.</p>
+        <button class="bg-[#009689] text-white text-lg font-bold px-12 py-5 rounded-full hover:bg-[#007d72] transition-all shadow-lg hover:shadow-xl hover:-translate-y-1 inline-flex items-center gap-3 font-sans" onclick="window.location.href='https://superior-pharmacy-we-z3k8.bolt.host/'">
+          Start Free Assessment
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+          </svg>
+        </button>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-grid">
+          <div class="footer-column">
+            <img src="https://c.animaapp.com/mgyq65e6VP2ypA/img/cropped-superior-1.png" alt="Superior Pharmacy" class="footer-logo" />
+            <p class="footer-description">Superior Pharmacy provides online prescription weight loss services across the UK. GPhC registered and regulated.</p>
+            <div class="footer-address">
+              <p><strong>Registered Address:</strong></p>
+              <p>Superior Pharmacy<br />2A Hawes Close<br />Walsall, WS1 3HG<br />United Kingdom</p>
+            </div>
+          </div>
+          
+          <div class="footer-column">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="weight-management.html">Weight Management</a></li>
+              <li><a href="wegovy.html">Wegovy</a></li>
+              <li><a href="mounjaro.html">Mounjaro</a></li>
+              <li><a href="#consultation">Online Consultation</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-column">
+            <h4>Information</h4>
+            <ul>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="#how-it-works">How It Works</a></li>
+              <li><a href="#faq">FAQ</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-column">
+            <h4>Legal</h4>
+            <ul>
+              <li><a href="#privacy">Privacy Policy</a></li>
+              <li><a href="#terms">Terms & Conditions</a></li>
+              <li><a href="#complaints">Complaints Procedure</a></li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="footer-prescribers">
+          <h4>Our Prescribers</h4>
+          <p><strong>Superintendent Pharmacist:</strong> Raman Sangha (GPhC No.: 2085763)</p>
+          <p><strong>Clinical Lead:</strong> Resham Sira (GPhC No.: 2086835)</p>
+        </div>
+        
+        <div class="footer-bottom">
+          <p>&copy; 2025 Superior Pharmacy. All rights reserved. Registered with the General Pharmaceutical Council (GPhC).</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>

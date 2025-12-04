@@ -1,0 +1,900 @@
+/* ===================================
+   ALL TREATMENTS PAGE STYLES
+   =================================== */
+
+/* Hero Section - Premium Design */
+.treatments-hero-section {
+  position: relative;
+  background: #eceae7;
+  padding: 10.625rem 2rem 8rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Animated Background Gradients - Match Homepage */
+.treatments-hero-section::before {
+  content: '';
+  position: absolute;
+  right: -100%;
+  bottom: -50%;
+  width: 200%;
+  height: 150%;
+  background: radial-gradient(circle, rgba(231, 206, 107, 0.39) 0%, transparent 38%);
+  pointer-events: none;
+  animation: floatGradient 20s ease-in-out infinite;
+}
+
+.treatments-hero-section::after {
+  content: '';
+  position: absolute;
+  top: -30%;
+  left: -50%;
+  width: 120%;
+  height: 90%;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(0, 151, 178, 0.24) 0%, transparent 38%);
+  pointer-events: none;
+  animation: floatGradient 25s ease-in-out infinite reverse;
+}
+
+@keyframes floatGradient {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(-30px, -30px) scale(1.05);
+  }
+}
+
+.treatments-hero-container {
+  max-width: 75rem;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.treatments-hero-container .section-label {
+  display: inline-block;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 700;
+  font-size: 0.875rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--primary-teal);
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+/* Premium Title Styling */
+.treatments-hero-container h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  font-size: 5rem;
+  line-height: 1.1;
+  color: var(--text-dark);
+  margin: 0 auto 2rem;
+  max-width: 62.5rem;
+  letter-spacing: -0.02em;
+  position: relative;
+}
+
+/* Decorative Underline */
+.treatments-hero-container h1::after {
+  content: '';
+  display: block;
+  width: 6rem;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-teal) 0%, transparent 100%);
+  margin: 2rem auto 0;
+  border-radius: 2px;
+}
+
+/* Premium Subtitle */
+.treatments-hero-subtitle {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1.375rem;
+  line-height: 1.6;
+  color: #495565;
+  margin: 0 auto 3rem;
+  max-width: 48rem;
+  font-weight: 400;
+}
+
+/* Trust Badges Row */
+.treatments-trust-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+}
+
+.treatments-trust-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  color: var(--text-dark);
+  padding: 0.75rem 1.5rem;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border-radius: 2rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+.treatments-trust-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(0, 150, 137, 0.15);
+}
+
+.treatments-trust-item svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: var(--primary-teal);
+  flex-shrink: 0;
+}
+
+/* Filter Bar */
+.treatments-filter-bar {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 0.75rem 1.5rem;
+  background: var(--white);
+  border: 2px solid var(--border-light);
+  border-radius: 2rem;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--text-dark);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.filter-btn:hover {
+  border-color: var(--primary-teal);
+  background: rgba(0, 150, 137, 0.05);
+}
+
+.filter-btn.active {
+  background: var(--primary-teal);
+  border-color: var(--primary-teal);
+  color: var(--white);
+}
+
+/* Treatments Grid Section */
+.treatments-grid-section {
+  background: var(--white);
+  padding: 6rem 2rem;
+}
+
+.treatments-grid-two {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+/* Treatment Card */
+.treatment-card {
+  background: var(--white);
+  border: 1px solid #e5e7eb;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.treatment-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  border-color: #d1d5db;
+}
+
+.treatment-badge-type {
+  display: inline-block;
+  padding: 0.375rem 0.875rem;
+  background: #f3f4f6;
+  border-radius: 1.5rem;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 600;
+  font-size: 0.6875rem;
+  color: #6b7280;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.treatment-image {
+  width: 100%;
+  height: 24rem;
+  overflow: hidden;
+  position: relative;
+  background: #fafafa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.treatment-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.treatment-card:hover .treatment-image img {
+  transform: scale(1.05);
+}
+
+.treatment-content {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1;
+  background: var(--white);
+}
+
+.treatment-content h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 2rem;
+  color: var(--text-dark);
+  margin: 0 0 0.5rem 0;
+  line-height: 1.2;
+}
+
+.treatment-generic {
+  display: none;
+}
+
+.treatment-description {
+  display: none;
+}
+
+.treatment-features {
+  display: none;
+}
+
+.treatment-price {
+  display: none;
+}
+
+.treatment-actions {
+  display: flex;
+  flex-direction: row;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+
+.treatment-actions .cta-button {
+  flex: 1;
+  padding: 0.875rem 1.25rem;
+  font-size: 0.9375rem;
+  border-radius: 0.625rem;
+  font-weight: 600;
+}
+
+.treatment-actions .primary-cta {
+  background: var(--text-dark);
+  color: var(--white);
+  border: 2px solid var(--text-dark);
+}
+
+.treatment-actions .primary-cta:hover {
+  background: #1a1a1a;
+  border-color: #1a1a1a;
+  transform: none;
+}
+
+.treatment-actions .secondary-cta {
+  background: transparent;
+  color: var(--text-dark);
+  border: 2px solid #e5e7eb;
+}
+
+.treatment-actions .secondary-cta:hover {
+  background: #f9fafb;
+  border-color: var(--text-dark);
+  transform: none;
+}
+
+.treatment-link {
+  display: none;
+}
+
+.treatment-safety-link {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 400;
+  font-size: 0.8125rem;
+  color: #9ca3af;
+  text-decoration: underline;
+  display: inline-block;
+  transition: color 0.3s;
+}
+
+.treatment-safety-link:hover {
+  color: var(--text-dark);
+}
+
+/* Comparison Section - Premium Redesign */
+.treatments-comparison-section {
+  position: relative;
+  background: #eceae7;
+  padding: 8rem 2rem;
+  overflow: hidden;
+}
+
+/* Animated Background Gradients */
+.treatments-comparison-section::before {
+  content: '';
+  position: absolute;
+  left: -50%;
+  top: -30%;
+  width: 120%;
+  height: 120%;
+  background: radial-gradient(circle, rgba(231, 206, 107, 0.25) 0%, transparent 50%);
+  pointer-events: none;
+  animation: floatGradient 22s ease-in-out infinite;
+}
+
+.treatments-comparison-section::after {
+  content: '';
+  position: absolute;
+  right: -30%;
+  bottom: -40%;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(0, 151, 178, 0.18) 0%, transparent 50%);
+  pointer-events: none;
+  animation: floatGradient 28s ease-in-out infinite reverse;
+}
+
+.treatments-comparison-section .section-container {
+  position: relative;
+  z-index: 1;
+}
+
+.treatments-comparison-section .section-header h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  font-size: 4.5rem;
+  line-height: 1.1;
+  color: var(--text-dark);
+  margin: 1rem auto 2rem;
+  letter-spacing: -0.02em;
+}
+
+.treatments-comparison-section .section-header p {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1.375rem;
+  line-height: 1.6;
+  color: #495565;
+  max-width: 48rem;
+  margin: 0 auto 1rem;
+  font-weight: 400;
+}
+
+/* Premium Comparison Cards */
+.comparison-cards-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  margin: 4rem 0;
+}
+
+.comparison-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 1.5rem;
+  padding: 3rem;
+  box-shadow: 
+    0 4px 20px rgba(0, 0, 0, 0.06),
+    0 1px 3px rgba(0, 0, 0, 0.04);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.comparison-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-teal) 0%, #00b5a4 100%);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+
+.comparison-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 
+    0 20px 40px rgba(0, 150, 137, 0.12),
+    0 8px 16px rgba(0, 0, 0, 0.08);
+  border-color: rgba(0, 150, 137, 0.2);
+}
+
+.comparison-card:hover::before {
+  transform: scaleX(1);
+}
+
+.comparison-card-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid var(--border-light);
+}
+
+.comparison-card-badge {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: #f3f4f6;
+  border-radius: 2rem;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 600;
+  font-size: 0.75rem;
+  color: #6b7280;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.comparison-card-header h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 3rem;
+  color: var(--text-dark);
+  margin-bottom: 0.5rem;
+  line-height: 1.1;
+}
+
+.comparison-card-generic {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1.125rem;
+  color: var(--text-gray);
+  font-weight: 500;
+}
+
+.comparison-features-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.comparison-feature-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.comparison-feature-item:last-child {
+  border-bottom: none;
+}
+
+.comparison-feature-label {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  color: var(--text-dark);
+}
+
+.comparison-feature-value {
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  font-size: 1.125rem;
+  color: var(--primary-teal);
+  text-align: right;
+}
+
+.comparison-feature-value svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: var(--primary-teal);
+}
+
+.comparison-card-cta {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 2px solid var(--border-light);
+}
+
+.comparison-note {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #495565;
+  text-align: center;
+  margin-top: 3rem;
+  max-width: 48rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5rem 2rem;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+/* Legacy table styles - hidden by default */
+.comparison-table-wrapper {
+  display: none;
+}
+
+/* How to Choose Section */
+.treatments-choose-section {
+  background: linear-gradient(180deg, #fef9f5 0%, #ffffff 100%);
+  padding: 8rem 2rem 0; /* Removed bottom padding, relying on choose-cta's margin-bottom */
+}
+
+.choose-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  margin: 4rem 0;
+}
+
+.choose-card {
+  background: var(--white);
+  border: 1px solid var(--border-light);
+  border-radius: 1.5rem;
+  padding: 3rem;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s;
+  position: relative;
+}
+
+.choose-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 150, 137, 0.12);
+}
+
+.choose-number {
+  width: 4rem;
+  height: 4rem;
+  background: var(--primary-teal);
+  color: var(--white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 2rem;
+  margin: 0 auto 2rem;
+  box-shadow: 0 4px 20px rgba(0, 150, 137, 0.3);
+}
+
+.choose-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 1.75rem;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+.choose-card p {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  color: var(--text-gray);
+}
+
+.choose-cta {
+  text-align: center;
+  margin-top: 4rem; /* Adjusted margin-top for better spacing from cards */
+  margin-bottom: 4rem; /* Explicit margin-bottom for controlled spacing */
+}
+
+.choose-cta p {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: #495565;
+  margin-top: 1rem; /* Reduced margin-top for subtext */
+  max-width: 35rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* FAQ Section */
+.treatments-faq-section {
+  background: var(--white);
+  padding: 4rem 2rem 8rem; /* Reduced top padding, maintained bottom padding */
+}
+
+.treatments-faq-container {
+  max-width: 62.5rem;
+}
+
+.treatments-faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+.treatments-faq-item {
+  background: var(--white);
+  border-radius: 1rem;
+  overflow: hidden;
+  border: 1px solid var(--border-light);
+}
+
+.treatments-faq-item summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem;
+  cursor: pointer;
+  list-style: none;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: var(--text-dark);
+  transition: background 0.3s;
+}
+
+.treatments-faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.treatments-faq-item summary:hover {
+  background: rgba(0, 150, 137, 0.05);
+}
+
+.treatments-faq-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: var(--primary-teal);
+  transition: transform 0.3s;
+  flex-shrink: 0;
+}
+
+.treatments-faq-item[open] .treatments-faq-icon {
+  transform: rotate(45deg);
+}
+
+.treatments-faq-answer {
+  padding: 0 1.5rem 1.5rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.treatments-faq-answer p {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--text-gray);
+  margin-top: 1rem;
+}
+
+/* Final CTA Section */
+.treatments-final-cta-section {
+  background: var(--white);
+  padding: 7.5rem 2rem;
+}
+
+.treatments-final-cta-container {
+  max-width: 75rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.treatments-final-cta-container h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 3.75rem;
+  color: var(--text-dark);
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.treatments-final-cta-container > p {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: var(--text-gray);
+  margin-bottom: 3rem;
+}
+
+.treatments-final-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.treatments-final-trust {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.treatments-final-trust-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--text-dark);
+}
+
+.treatments-final-trust-item svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: var(--primary-teal);
+}
+
+.treatments-final-divider {
+  width: 1px;
+  height: 2rem;
+  background: var(--border-light);
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .treatments-grid-two {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .choose-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .treatments-hero-section {
+    padding: 6rem 1.25rem 4rem;
+  }
+  
+  .treatments-hero-container h1 {
+    font-size: 2.5rem;
+  }
+  
+  .treatments-hero-container h1::after {
+    width: 4rem;
+    height: 3px;
+    margin: 1.5rem auto 0;
+  }
+  
+  .treatments-hero-subtitle {
+    font-size: 1rem;
+  }
+  
+  .treatments-trust-row {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .treatments-trust-item {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .treatments-filter-bar {
+    flex-direction: column;
+  }
+  
+  .filter-btn {
+    width: 100%;
+  }
+  
+  .treatments-grid-two {
+    grid-template-columns: 1fr;
+  }
+  
+  .comparison-cards-wrapper {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .treatments-comparison-section .section-header h2 {
+    font-size: 2.5rem;
+  }
+  
+  .treatments-comparison-section .section-header p {
+    font-size: 1rem;
+  }
+  
+  .comparison-card {
+    padding: 2rem;
+  }
+  
+  .comparison-card-header h3 {
+    font-size: 2rem;
+  }
+  
+  .treatments-choose-section .section-header h2 {
+    font-size: 2.5rem;
+  }
+  
+  .treatments-choose-section .section-header p {
+    font-size: 1rem;
+  }
+  
+  .choose-card {
+    padding: 2rem;
+  }
+  
+  .choose-card h3 {
+    font-size: 1.5rem;
+  }
+  
+  .choose-card p {
+    font-size: 0.9375rem;
+  }
+  
+  .choose-cta p {
+    font-size: 1rem;
+  }
+  
+  .treatments-faq-section .section-header h2 {
+    font-size: 2.5rem;
+  }
+  
+  .treatments-faq-section .section-header p {
+    font-size: 1rem;
+  }
+  
+  .treatments-faq-item summary {
+    font-size: 1rem;
+    padding: 1.25rem 1.5rem;
+  }
+  
+  .treatments-faq-answer p {
+    font-size: 0.9375rem;
+    margin-top: 1rem;
+  }
+  
+  .treatments-final-cta-container h2 {
+    font-size: 2rem;
+  }
+  
+  .treatments-final-cta-container > p {
+    font-size: 1rem;
+  }
+  
+  .treatments-final-buttons {
+    flex-direction: column;
+  }
+  
+  .treatments-final-trust {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .treatments-final-trust-item {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .treatments-final-divider {
+    display: none;
+  }
+}

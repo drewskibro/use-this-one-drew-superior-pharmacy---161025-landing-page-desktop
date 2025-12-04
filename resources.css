@@ -1,0 +1,49 @@
+/* Resources Page Specific Styles */
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.delay-100 {
+  animation-delay: 0.1s;
+}
+
+.delay-200 {
+  animation-delay: 0.2s;
+}
+
+/* Hover Lift Effect */
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+}
+
+/* Active Link Styling for Nav */
+.active-link {
+  color: var(--primary-teal) !important;
+  font-weight: 700 !important;
+}
+
+
+/* Ensure Tailwind utilities work with existing CSS variables if needed */
+:root {
+  --primary-teal: #009689;
+  --primary-blue: #0077b6;
+  --text-dark: #282832;
+  --text-gray: #495565;
+}

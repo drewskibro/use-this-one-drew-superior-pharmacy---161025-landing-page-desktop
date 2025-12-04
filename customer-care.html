@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <title>Customer Care | Superior Pharmacy</title>
+    <meta name="description" content="Customer care, policies, and support for Superior Pharmacy patients." />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <link rel="stylesheet" href="customer-care.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#009689',
+              secondary: '#0077b6',
+              dark: '#282832',
+              light: '#f5f3f0',
+            },
+            fontFamily: {
+              serif: ['Playfair Display', 'serif'],
+              sans: ['Nunito Sans', 'sans-serif'],
+            }
+          },
+        },
+        plugins: [],
+      };
+    </script>
+  </head>
+  <body class="bg-white text-[#282832]">
+    
+    <!-- Navigation -->
+    <nav class="main-nav" role="navigation" aria-label="Main navigation">
+      <div class="nav-container">
+        <a href="index.html">
+          <img src="https://c.animaapp.com/mgyq65e6VP2ypA/img/cropped-superior-1.png" alt="Superior Pharmacy Logo" class="logo" />
+        </a>
+        
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <div class="nav-dropdown">
+            <button class="nav-dropdown-btn" aria-expanded="false" aria-haspopup="true">
+              About us
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="nav-dropdown-menu">
+              <a href="about.html">About Us</a>
+              <a href="resources.html">Resources</a>
+              <a href="customer-care.html" class="active-link">Customer Care</a>
+            </div>
+          </div>
+          <a href="weight-management.html">Weight Management</a>
+          <div class="nav-dropdown">
+            <button class="nav-dropdown-btn" aria-expanded="false" aria-haspopup="true">
+              Treatments
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="nav-dropdown-menu">
+              <a href="all-treatments.html">All treatments</a>
+              <a href="mounjaro.html">Mounjaro</a>
+              <a href="wegovy.html">Wegovy</a>
+              <a href="#switching-providers">Switching Providers</a>
+            </div>
+          </div>
+          <a href="contact.html">Contact Us</a>
+        </div>
+        
+        <button class="cta-button primary-cta desktop-cta" aria-label="Start your assessment" onclick="window.location.href='https://superior-pharmacy-we-z3k8.bolt.host/'">
+          Start Your Assessment
+          <img src="https://c.animaapp.com/mgyq65e6VP2ypA/img/arrowright.svg" alt="" aria-hidden="true" />
+        </button>
+        
+        <button class="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+      
+      <!-- Mobile Menu -->
+      <div class="mobile-menu">
+        <div class="mobile-menu-links">
+          <a href="index.html">Home</a>
+          <details class="mobile-dropdown">
+            <summary>About us</summary>
+            <div class="mobile-dropdown-content">
+              <a href="about.html">About Us</a>
+              <a href="resources.html">Resources</a>
+              <a href="customer-care.html" class="active-link">Customer Care</a>
+            </div>
+          </details>
+          <a href="weight-management.html">Weight Management</a>
+          <details class="mobile-dropdown">
+            <summary>Treatments</summary>
+            <div class="mobile-dropdown-content">
+              <a href="all-treatments.html">All treatments</a>
+              <a href="mounjaro.html">Mounjaro</a>
+              <a href="wegovy.html">Wegovy</a>
+              <a href="#switching-providers">Switching Providers</a>
+            </div>
+          </details>
+          <a href="contact.html">Contact Us</a>
+          <button class="cta-button primary-cta mobile-cta" onclick="window.location.href='https://superior-pharmacy-we-z3k8.bolt.host/'">
+            Start Your Assessment
+            <img src="https://c.animaapp.com/mgyq65e6VP2ypA/img/arrowright.svg" alt="" aria-hidden="true" />
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="customer-care-hero">
+      <div class="customer-care-hero-content">
+        <span class="section-label">CUSTOMER CARE</span>
+        <h1>We're here to support your journey</h1>
+        <p class="customer-care-hero-subtitle">Your health journey is our priority. Find answers to common questions, review our policies, or get in touch with our UK-based clinical support team.</p>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="customer-care-content">
+      <div class="customer-care-container">
+        
+        <!-- Quick Support Grid -->
+        <div class="quick-support-grid">
+          <div class="support-card">
+            <div class="support-icon">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>Discreet Delivery</h3>
+            <p>Plain, unbranded packaging ensures your complete privacy at every step.</p>
+          </div>
+          
+          <div class="support-card">
+            <div class="support-icon">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Fast & Secure</h3>
+            <p>Tracked next-day delivery with specialist temperature-controlled packaging.</p>
+          </div>
+          
+          <div class="support-card">
+            <div class="support-icon">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                <path d="M9 12L11 14L15 10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Easy Management</h3>
+            <p>Full control over your subscription. Pause or cancel anytime online.</p>
+          </div>
+        </div>
+
+        <!-- Policy Links Card -->
+        <div class="policy-links-card">
+          <h3>Policies & Agreements</h3>
+          
+          <!-- Policy Links -->
+          <a href="#" class="policy-link">
+            <div class="policy-link-content">
+              <div class="policy-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <span class="policy-link-text">Terms & Conditions</span>
+            </div>
+            <svg class="policy-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+            </svg>
+          </a>
+
+          <a href="#" class="policy-link">
+            <div class="policy-link-content">
+              <div class="policy-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <span class="policy-link-text">Terms of Sale</span>
+            </div>
+            <svg class="policy-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+            </svg>
+          </a>
+
+          <a href="#" class="policy-link">
+            <div class="policy-link-content">
+              <div class="policy-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <span class="policy-link-text">Privacy Policy</span>
+            </div>
+            <svg class="policy-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+            </svg>
+          </a>
+
+          <a href="#" class="policy-link">
+            <div class="policy-link-content">
+              <div class="policy-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <span class="policy-link-text">Cookies Policy</span>
+            </div>
+            <svg class="policy-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Help Card -->
+        <div class="help-card">
+          <div class="help-card-avatars">
+            <div class="avatar-group">
+              <div class="avatar-item">
+                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop" alt="Support Team" />
+              </div>
+              <div class="avatar-item">
+                <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=100&h=100&fit=crop" alt="Support Team" />
+              </div>
+              <div class="avatar-item">
+                <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=100&h=100&fit=crop" alt="Support Team" />
+              </div>
+              <div class="avatar-count">+5</div>
+            </div>
+          </div>
+
+          <h2>Need Personal Support?</h2>
+          <p class="help-card-description">We understand that weight loss is a personal journey. Our UK-based patient support team is here to help with discretion and care.</p>
+
+          <a href="contact.html" class="cta-button gradient-cta">
+            Contact Support
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          
+          <p class="help-card-note">Dedicated support for your weight loss journey</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-grid">
+          <div class="footer-column">
+            <img src="https://c.animaapp.com/mgyq65e6VP2ypA/img/cropped-superior-1.png" alt="Superior Pharmacy" class="footer-logo" />
+            <p class="footer-description">Superior Pharmacy provides online prescription weight loss services across the UK. GPhC registered and regulated.</p>
+            <div class="footer-address">
+              <p><strong>Registered Address:</strong></p>
+              <p>Superior Pharmacy<br />2A Hawes Close<br />Walsall, WS1 3HG<br />United Kingdom</p>
+            </div>
+          </div>
+          
+          <div class="footer-column">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="weight-management.html">Weight Management</a></li>
+              <li><a href="wegovy.html">Wegovy</a></li>
+              <li><a href="mounjaro.html">Mounjaro</a></li>
+              <li><a href="#consultation">Online Consultation</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-column">
+            <h4>Information</h4>
+            <ul>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="#how-it-works">How It Works</a></li>
+              <li><a href="#faq">FAQ</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-column">
+            <h4>Legal</h4>
+            <ul>
+              <li><a href="#privacy">Privacy Policy</a></li>
+              <li><a href="#terms">Terms & Conditions</a></li>
+              <li><a href="#complaints">Complaints Procedure</a></li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="footer-prescribers">
+          <h4>Our Prescribers</h4>
+          <p><strong>Superintendent Pharmacist:</strong> Raman Sangha (GPhC No.: 2085763)</p>
+          <p><strong>Clinical Lead:</strong> Resham Sira (GPhC No.: 2086835)</p>
+        </div>
+        
+        <div class="footer-bottom">
+          <p>&copy; 2025 Superior Pharmacy. All rights reserved. Registered with the General Pharmaceutical Council (GPhC).</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1201 @@
+/* ===================================
+   WEIGHT MANAGEMENT PAGE STYLES
+   =================================== */
+
+/* Hero Section */
+.wm-hero-section {
+  background: var(--white);
+  padding: 10.625rem 3.75rem 7.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.wm-hero-container {
+  max-width: 105rem;
+  margin: 0 auto;
+}
+
+.wm-hero-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+.wm-hero-text h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  font-size: 3.75rem;
+  line-height: 1.15;
+  color: var(--text-dark);
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.01em;
+}
+
+.wm-hero-subtitle {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #495565;
+  margin-bottom: 2rem;
+  font-weight: 400;
+}
+
+.wm-hero-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.wm-trust-badges {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.wm-trust-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  background: rgba(0, 150, 137, 0.08);
+  border: 1px solid rgba(0, 150, 137, 0.2);
+  border-radius: 2rem;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: var(--text-dark);
+}
+
+.wm-trust-badge svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: var(--primary-teal);
+}
+
+.wm-hero-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.wm-hero-image {
+  aspect-ratio: 1;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.wm-hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.wm-hero-image:hover img {
+  transform: scale(1.05);
+}
+
+.wm-hero-stats-card {
+  background: linear-gradient(135deg, var(--primary-teal) 0%, #00b5a4 100%);
+  border-radius: 1rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  box-shadow: 0 10px   40px rgba(0, 150, 137, 0.2);
+}
+
+.wm-stat-number {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.wm-stat-label {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.wm-stat-divider {
+  width: 3rem;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+  margin: 1rem 0;
+}
+
+/* Results Section */
+.wm-results-section {
+  background: linear-gradient(180deg, #fef9f5 0%, #ffffff 100%);
+  padding: 6rem 2rem;
+}
+
+.wm-results-content {
+  display: grid;
+  grid-template-columns: 45fr 55fr;
+  gap: 5rem;
+  margin-top: 4rem;
+}
+
+.wm-testimonial-card {
+  background: var(--white);
+  border: 1px solid var(--border-light);
+  border-radius: 1.5rem;
+  padding: 3rem;
+  box-shadow: 0 4px 42px rgba(0, 0, 0, 0.11);
+}
+
+.wm-testimonial-stars {
+  margin-bottom: 1.5rem;
+}
+
+.wm-testimonial-stars img {
+  height: 1.5rem;
+}
+
+.wm-testimonial-card blockquote {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: var(--text-dark);
+  margin-bottom: 2rem;
+}
+
+.wm-testimonial-author {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.wm-testimonial-author .author-name {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: var(--text-dark);
+}
+
+.wm-testimonial-author .author-location {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 0.875rem;
+  color: var(--text-gray);
+}
+
+.wm-testimonial-author .author-result {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--primary-teal);
+}
+
+.wm-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.wm-stat-box {
+  background: var(--white);
+  border: 1px solid var(--border-light);
+  border-radius: 1rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+.wm-stat-box svg {
+  width: 3rem;
+  height: 3rem;
+  color: var(--primary-teal);
+}
+
+.wm-stat-box .wm-stat-number {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: var(--text-dark);
+  margin: 0;
+}
+
+.wm-stat-box .wm-stat-label {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 0.9375rem;
+  color: var(--text-gray);
+  line-height: 1.4;
+}
+
+.wm-disclaimer {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 0.875rem;
+  color: var(--text-gray);
+  text-align: center;
+  margin-top: 3rem;
+}
+
+/* What's Included Section */
+.wm-included-section {
+  background: var(--white);
+  padding: 6rem 2rem;
+}
+
+.wm-included-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  margin-top: 4rem;
+}
+
+.wm-included-card {
+  background: var(--white);
+  border: 1px solid var(--border-light);
+  border-radius: 1.5rem;
+  padding: 2.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+}
+
+.wm-included-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 150, 137, 0.12);
+}
+
+.wm-card-icon {
+  width: 4rem;
+  height: 4rem;
+  background: linear-gradient(135deg, rgba(0, 150, 137, 0.08) 0%, rgba(0, 181, 164, 0.12) 100%);
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.wm-card-icon svg {
+  width: 2rem;
+  height: 2rem;
+  color: var(--primary-teal);
+}
+
+.wm-included-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 1.75rem;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+.wm-card-description {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  color: var(--text-gray);
+  margin-bottom: 1.5rem;
+}
+
+.wm-card-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.wm-card-features li {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--text-dark);
+  padding-left: 1.75rem;
+  position: relative;
+}
+
+.wm-card-features li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  background: var(--primary-teal);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.wm-card-price {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 2rem;
+  color: var(--primary-teal);
+  margin-bottom: 1rem;
+  margin-top: auto;
+}
+
+/* How It Works Section */
+.wm-how-section {
+  background: linear-gradient(180deg, #fef9f5 0%, #ffffff 100%);
+  padding: 6rem 2rem;
+}
+
+.wm-steps-container {
+  margin-top: 4rem;
+}
+
+.wm-step {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+  margin-bottom: 7.5rem;
+}
+
+.wm-step:last-child {
+  margin-bottom: 0;
+}
+
+.wm-step-reverse {
+  direction: rtl;
+}
+
+.wm-step-reverse > * {
+  direction: ltr;
+}
+
+.wm-step-image {
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.wm-step-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.wm-step-number {
+  width: 3.75rem;
+  height: 3.75rem;
+  background: var(--primary-teal);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 2rem;
+  color: var(--white);
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0, 150, 137, 0.3);
+}
+
+.wm-step-content h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: var(--text-dark);
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.wm-step-content > p {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--text-gray);
+  margin-bottom: 2rem;
+}
+
+.wm-step-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.wm-step-list li {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 500;
+  font-size: 1.125rem;
+  color: var(--text-dark);
+  padding-left: 1.5rem;
+  position: relative;
+  line-height: 1.6;
+}
+
+.wm-step-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.6rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  background: var(--primary-teal);
+  border-radius: 50%;
+}
+
+.wm-step-timeline {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 0.9375rem;
+  color: var(--text-gray);
+}
+
+.wm-step-timeline svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: var(--primary-teal);
+}
+
+/* Medication Section */
+.wm-medication-section {
+  background: var(--white);
+  padding: 6rem 2rem;
+}
+
+.wm-medication-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+  margin-top: 4rem;
+}
+
+.wm-medication-card {
+  background: var(--white);
+  border: 2px solid var(--border-light);
+  border-radius: 1.5rem;
+  padding: 3rem;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.wm-medication-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.wm-medication-featured {
+  border-color: var(--primary-teal);
+  box-shadow: 0 4px 20px rgba(0, 150, 137, 0.15);
+}
+
+.wm-medication-badge {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  background: var(--primary-teal);
+  color: var(--white);
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 700;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+}
+
+.wm-medication-name {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 2.25rem;
+  color: var(--primary-teal);
+  margin-bottom: 0.5rem;
+}
+
+.wm-medication-generic {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--text-gray);
+  margin-bottom: 2rem;
+}
+
+.wm-medication-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.wm-medication-features li {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1rem;
+  color: var(--text-dark);
+  padding-left: 1.75rem;
+  position: relative;
+}
+
+.wm-medication-features li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  background: var(--primary-teal);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.wm-medication-price {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 2rem;
+  color: var(--primary-teal);
+  margin-bottom: 0.5rem;
+}
+
+.wm-medication-includes {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 0.875rem;
+  color: var(--text-gray);
+  margin-bottom: 1.5rem;
+}
+
+.wm-medication-note {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1rem;
+  color: var(--text-gray);
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+/* Prescribers Section */
+.wm-prescribers-section {
+  background: linear-gradient(180deg, #fef9f5 0%, #ffffff 100%);
+  padding: 6rem 2rem;
+}
+
+.wm-prescribers-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  margin-top: 4rem;
+}
+
+.wm-prescriber-card {
+  background: var(--white);
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 42px rgba(0, 0, 0, 0.11);
+  display: flex;
+  position: relative;
+  max-height: 20rem;
+}
+
+.wm-prescriber-image {
+  width: 35%;
+  min-height: 20rem;
+  max-height: 20rem;
+}
+
+.wm-prescriber-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.wm-prescriber-accent {
+  width: 4px;
+  background: var(--primary-teal);
+}
+
+.wm-prescriber-content {
+  flex: 1;
+  padding: 2rem;
+  position: relative;
+  overflow-y: auto;
+}
+
+.wm-prescriber-quote {
+  position: absolute;
+  top: 0.5rem;
+  right: 1.5rem;
+  font-family: 'Playfair Display', serif;
+  font-size: 5rem;
+  color: rgba(0, 150, 137, 0.1);
+  line-height: 1;
+}
+
+.wm-prescriber-content h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 1.75rem;
+  color: var(--text-dark);
+  margin-bottom: 0.5rem;
+}
+
+.wm-prescriber-title {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--primary-teal);
+  margin-bottom: 1rem;
+}
+
+.wm-prescriber-gphc {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: var(--text-gray);
+  margin-bottom: 1.5rem;
+}
+
+.wm-prescriber-bio {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--text-gray);
+  margin-bottom: 1rem;
+}
+
+.wm-prescriber-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.wm-prescriber-badge {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: rgba(0, 150, 137, 0.08);
+  border: 1px solid rgba(0, 150, 137, 0.2);
+  border-radius: 2rem;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 600;
+  font-size: 0.75rem;
+  color: var(--primary-teal);
+}
+
+/* Calculator Section */
+.wm-calculator-section {
+  background: var(--white);
+  padding: 6rem 2rem;
+}
+
+.wm-calculator-content {
+  display: grid;
+  grid-template-columns: 45fr 55fr;
+  gap: 5rem;
+  margin-top: 4rem;
+}
+
+.wm-calculator-testimonial {
+  position: relative;
+  height: 32.875rem;
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+.wm-calculator-testimonial img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.wm-calculator-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.6) 100%);
+}
+
+.wm-calculator-quote {
+  position: absolute;
+  bottom: 2.75rem;
+  left: 2.75rem;
+  right: 2.75rem;
+  color: var(--white);
+}
+
+.wm-calculator-quote .wm-testimonial-stars {
+  margin-bottom: 1rem;
+}
+
+.wm-calculator-quote .wm-testimonial-stars img {
+  height: 1.25rem;
+}
+
+.wm-calculator-quote p {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  margin-bottom: 0.75rem;
+}
+
+.wm-calculator-quote cite {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 600;
+  font-size: 0.875rem;
+  font-style: normal;
+}
+
+.wm-calculator-widget {
+  background: var(--white);
+  border: 1px solid var(--border-light);
+  border-radius: 1.5rem;
+  padding: 3rem;
+  box-shadow: 0 4px 42px rgba(0, 0, 0, 0.11);
+}
+
+.wm-calculator-widget h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 2rem;
+  color: var(--text-dark);
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.wm-calculator-subtitle {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1rem;
+  color: var(--text-gray);
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.wm-calculator-input label {
+  display: block;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.wm-calculator-input label span {
+  color: var(--primary-teal);
+  font-weight: 700;
+}
+
+#wm-weight-slider {
+  width: 100%;
+  height: 0.5rem;
+  background: linear-gradient(to right, var(--primary-teal) 0%, var(--primary-teal) 25%, #e5e7eb 25%, #e5e7eb 100%);
+  border-radius: 2rem;
+  outline: none;
+  -webkit-appearance: none;
+  margin-bottom: 0.5rem;
+}
+
+#wm-weight-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: var(--primary-teal);
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 150, 137, 0.3);
+}
+
+#wm-weight-slider::-moz-range-thumb {
+  width: 1.5rem;
+  height: 1.5rem;
+  background: var(--primary-teal);
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 2px 8px rgba(0, 150, 137, 0.3);
+}
+
+.wm-slider-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.wm-slider-labels span {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 0.875rem;
+  color: var(--text-gray);
+}
+
+.wm-calculator-timeline {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  padding: 0 1rem;
+}
+
+.wm-timeline-marker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.wm-timeline-dot {
+  width: 0.75rem;
+  height: 0.75rem;
+  background: #e5e7eb;
+  border-radius: 50%;
+}
+
+.wm-timeline-active .wm-timeline-dot {
+  background: var(--primary-teal);
+  box-shadow: 0 0 0 4px rgba(0, 150, 137, 0.2);
+}
+
+.wm-timeline-marker span {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 0.875rem;
+  color: var(--text-gray);
+}
+
+.wm-calculator-result {
+  background: linear-gradient(90deg, rgba(239, 246, 255, 1) 0%, rgba(250, 245, 255, 1) 100%);
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.wm-result-label {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 0.875rem;
+  color: var(--text-gray);
+  margin-bottom: 0.5rem;
+}
+
+.wm-result-value {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 900;
+  font-size: 2.25rem;
+  color: var(--text-dark);
+  margin-bottom: 0.5rem;
+}
+
+.wm-result-time {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 0.875rem;
+  color: var(--text-gray);
+}
+
+.wm-calculator-disclaimer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 0.875rem;
+  color: var(--text-gray);
+  text-align: center;
+  margin-top: 2rem; /* Increased margin-top for better spacing */
+}
+
+.wm-calculator-disclaimer svg {
+  width: 1rem;
+  height: 1rem;
+  color: var(--primary-teal);
+}
+
+.wm-calculator-small {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 0.75rem;
+  color: var(--text-gray);
+  text-align: center;
+  margin-top: 1rem;
+  line-height: 1.5;
+}
+
+/* FAQ Section */
+.wm-faq-section {
+  background: linear-gradient(180deg, #fef9f5 0%, #ffffff 100%);
+  padding: 6rem 2rem;
+}
+
+.wm-faq-container {
+  max-width: 62.5rem;
+}
+
+.wm-faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+}
+
+.wm-faq-item {
+  background: var(--white);
+  border-radius: 1rem;
+  overflow: hidden;
+  border: 1px solid var(--border-light);
+}
+
+.wm-faq-item summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem;
+  cursor: pointer;
+  list-style: none;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: var(--text-dark);
+  transition: background 0.3s;
+}
+
+.wm-faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.wm-faq-item summary:hover {
+  background: rgba(0, 150, 137, 0.05);
+}
+
+.wm-faq-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: var(--primary-teal);
+  transition: transform 0.3s;
+  flex-shrink: 0;
+}
+
+.wm-faq-item[open] .wm-faq-icon {
+  transform: rotate(45deg);
+}
+
+.wm-faq-answer {
+  padding: 0 1.5rem 1.5rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.wm-faq-answer p {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-dark);
+  margin-top: 1rem;
+}
+
+.wm-faq-cta {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 0;
+}
+
+.wm-faq-cta p {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1rem;
+  color: var(--text-dark);
+  margin-bottom: 1.5rem;
+}
+
+/* Final CTA Section */
+.wm-final-cta-section {
+  background: var(--white);
+  padding: 4rem 5rem 7.5rem;
+}
+
+.wm-final-cta-container {
+  max-width: 75rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.wm-final-cta-container h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 3.75rem;
+  color: var(--text-dark);
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.wm-final-cta-container > p {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: var(--text-gray);
+  margin-bottom: 3rem;
+}
+
+.wm-final-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.wm-final-trust {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.wm-final-trust-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--text-dark);
+}
+
+.wm-final-trust-item svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: var(--primary-teal);
+}
+
+.wm-final-divider {
+  width: 1px;
+  height: 2rem;
+  background: var(--border-light);
+}
+
+
+/* Decorative Divider */
+.decorative-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.divider-line {
+  width: 3rem;
+  height: 1px;
+  background: var(--primary-teal);
+}
+
+.divider-dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  background: var(--primary-teal);
+  border-radius: 50%;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .wm-hero-content,
+  .wm-results-content,
+  .wm-calculator-content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  
+  .wm-included-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .wm-medication-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .wm-prescribers-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .wm-stories-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .wm-hero-section {
+    padding: 6rem 1.25rem 3rem;
+  }
+  
+  .wm-hero-text h1 {
+    font-size: 2rem;
+  }
+  
+  .wm-hero-subtitle {
+    font-size: 1rem;
+  }
+  
+  .wm-hero-buttons {
+    flex-direction: column;
+  }
+  
+  .wm-hero-images {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .wm-step {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 4rem;
+  }
+  
+  .wm-step-reverse {
+    direction: ltr;
+  }
+  
+  .wm-step-content h3 {
+    font-size: 1.75rem;
+  }
+  
+  .wm-prescriber-card {
+    flex-direction: column;
+  }
+  
+  .wm-prescriber-image {
+    width: 100%;
+    height: 20rem;
+  }
+  
+  .wm-stories-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .wm-final-cta-container h2 {
+    font-size: 2rem;
+  }
+  
+  .wm-final-cta-container > p {
+    font-size: 1rem;
+  }
+  
+  .wm-final-buttons {
+    flex-direction: column;
+  }
+  
+  .wm-final-trust {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .wm-final-divider {
+    display: none;
+  }
+  
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}

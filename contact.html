@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <title>Contact Us | Superior Pharmacy | Weight Loss Support</title>
+    <meta name="description" content="Get in touch with Superior Pharmacy for support, questions, or to start your weight loss journey. Online eligibility check, phone, and email support." />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <link rel="stylesheet" href="contact.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "gray0-white": "var(--gray0-white)",
+            },
+          },
+        },
+        plugins: [],
+      };
+    </script>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="main-nav" role="navigation" aria-label="Main navigation">
+      <div class="nav-container">
+        <img src="https://c.animaapp.com/mgyq65e6VP2ypA/img/cropped-superior-1.png" alt="Superior Pharmacy Logo" class="logo" />
+        
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <div class="nav-dropdown">
+            <button class="nav-dropdown-btn" aria-expanded="false" aria-haspopup="true">
+              About us
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="nav-dropdown-menu">
+              <a href="about.html">About Us</a>
+              <a href="resources.html">Resources</a>
+              <a href="customer-care.html">Customer Care</a>
+            </div>
+          </div>
+          <a href="weight-management.html">Weight Management</a>
+          <div class="nav-dropdown">
+            <button class="nav-dropdown-btn" aria-expanded="false" aria-haspopup="true">
+              Treatments
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="nav-dropdown-menu">
+              <a href="all-treatments.html">All treatments</a>
+              <a href="mounjaro.html">Mounjaro</a>
+              <a href="#switching-providers">Switching Providers</a>
+            </div>
+          </div>
+          <a href="contact.html" aria-current="page">Contact Us</a>
+        </div>
+        
+        <button class="cta-button primary-cta desktop-cta" aria-label="Start your assessment" onclick="window.location.href='https://superior-pharmacy-we-z3k8.bolt.host/'">
+          Start Your Assessment
+          <img src="https://c.animaapp.com/mgyq65e6VP2ypA/img/arrowright.svg" alt="" aria-hidden="true" />
+        </button>
+        
+        <button class="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+      
+      <div class="mobile-menu">
+        <div class="mobile-menu-links">
+          <a href="index.html">Home</a>
+          <details class="mobile-dropdown">
+            <summary>About us</summary>
+            <div class="mobile-dropdown-content">
+              <a href="about.html">About Us</a>
+              <a href="resources.html">Resources</a>
+              <a href="customer-care.html">Customer Care</a>
+            </div>
+          </details>
+          <a href="weight-management.html">Weight Management</a>
+          <details class="mobile-dropdown">
+            <summary>Treatments</summary>
+            <div class="mobile-dropdown-content">
+              <a href="all-treatments.html">All treatments</a>
+              <a href="mounjaro.html">Mounjaro</a>
+              <a href="wegovy.html">Wegovy</a>
+              <a href="#switching-providers">Switching Providers</a>
+            </div>
+          </details>
+          <a href="contact.html" aria-current="page">Contact Us</a>
+          <button class="cta-button primary-cta mobile-cta" onclick="window.location.href='https://superior-pharmacy-we-z3k8.bolt.host/'">
+            Start Your Assessment
+            <img src="https://c.animaapp.com/mgyq65e6VP2ypA/img/arrowright.svg" alt="" aria-hidden="true" />
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="contact-hero-section">
+      <div class="contact-hero-container">
+        <span class="section-label">GET IN TOUCH</span>
+        <h1>Start your weight loss journey today or reach out with any questions</h1>
+      </div>
+    </section>
+
+    <!-- Main Contact Section -->
+    <section class="contact-main-section">
+      <div class="section-container contact-main-container">
+        <div class="contact-form-wrapper">
+          <form class="contact-form">
+            <h2>Send us a message</h2>
+            <div class="form-group">
+              <label for="full-name">Full Name</label>
+              <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" required />
+            </div>
+            <div class="form-group">
+              <label for="email-address">Email Address</label>
+              <input type="email" id="email-address" name="email-address" placeholder="Enter your email address" required />
+            </div>
+            <div class="form-group">
+              <label for="phone-number">Phone Number (Optional)</label>
+              <input type="tel" id="phone-number" name="phone-number" placeholder="e.g., 07123 456789" />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <select id="subject" name="subject" required>
+                <option value="">Select a subject</option>
+                <option value="eligibility">Eligibility Check</option>
+                <option value="treatment-options">Treatment Options</option>
+                <option value="prescription-queries">Prescription Queries</option>
+                <option value="delivery-info">Delivery Information</option>
+                <option value="general-inquiry">General Inquiry</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">How can we help?</label>
+              <textarea id="message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
+            </div>
+            <button type="submit" class="cta-button primary-cta full-width" onclick="window.location.href='https://superior-pharmacy-we-z3k8.bolt.host/'">
+              Send Message
+              <img src="https://c.animaapp.com/mgyq65e6VP2ypA/img/arrowright.svg" alt="" aria-hidden="true" />
+            </button>
+          </form>
+        </div>
+        
+        <div class="contact-info-cards">
+          <!-- Start Your Journey Card (Emphasized) -->
+          <div class="info-card card-journey">
+            <div class="card-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2"/>
+                <path d="M9 12L11 14L15 10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Start Your Journey</h3>
+            <p>Begin with a free, no-obligation consultation to check your eligibility for prescription weight loss treatment.</p>
+            <button class="cta-button gradient-cta full-width" onclick="window.location.href='https://superior-pharmacy-we-z3k8.bolt.host/'">
+              Start Your Assessment
+              <img src="https://c.animaapp.com/mgyq65e6VP2ypA/img/arrowright.svg" alt="" aria-hidden="true" />
+            </button>
+          </div>
+
+          <!-- Phone Card -->
+          <div class="info-card card-phone">
+            <div class="card-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22 16.92V20C22 20.5304 21.7893 21.0391 21.4142 21.4142C21.0391 21.7893 20.5304 22 20 22C17.85 22 15.85 21.34 14.2 20.18C12.55 19.02 11.3 17.42 10.5 15.5C9.7 13.58 9.35 11.58 9.5 9.5C9.65 7.42 10.3 5.52 11.4 3.92C11.7 3.52 11.8 3.02 11.7 2.52C11.6 2.02 11.3 1.52 10.9 1.22L8.92 0.22C8.52 0.02 8.02 0.02 7.62 0.22C7.22 0.42 6.92 0.82 6.82 1.22L6.52 2.52C6.42 3.02 6.52 3.52 6.82 3.92C7.12 4.32 7.52 4.62 7.92 4.72C9.52 5.32 11.02 6.22 12.42 7.42C13.82 8.62 15.02 10.12 16.02 11.82C16.12 12.22 16.42 12.62 16.82 12.92C17.22 13.22 17.72 13.32 18.22 13.22L19.52 12.92C20.02 12.82 20.52 12.92 20.92 13.22C21.32 13.52 21.62 13.92 21.72 14.32L22 16.92Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>Speak to our pharmacists</h3>
+            <p class="contact-detail">01922 235006</p>
+            <p class="contact-hours">Monday-Friday 9am-6pm</p>
+          </div>
+
+          <!-- Email Card -->
+          <div class="info-card card-email">
+            <div class="card-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M22 6L12 13L2 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>Email us</h3>
+            <p class="contact-detail">info@superiorpharmacy.co.uk</p>
+            <p class="contact-hours">Response within 24 hours</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Action Section -->
+    <section class="contact-quick-action-section">
+      <div class="section-container contact-quick-action-container">
+        <div class="section-header">
+          <span class="section-label">READY TO START?</span>
+          <h2>Your path to a healthier you begins here</h2>
+          <div class="decorative-divider">
+            <span class="divider-line"></span>
+            <span class="divider-dot"></span>
+            <span class="divider-line"></span>
+          </div>
+        </div>
+        
+        <div class="quick-action-grid">
+          <div class="quick-action-card card-eligibility">
+            <h3>Not sure if you're eligible?</h3>
+            <p>Our 2-minute assessment will check if prescription weight loss treatment is right for you.</p>
+            <button class="cta-button gradient-cta" onclick="window.location.href='https://superior-pharmacy-we-z3k8.bolt.host/'">
+              Start Your Assessment
+              <img src="https://c.animaapp.com/mgyq65e6VP2ypA/img/arrowright.svg" alt="" aria-hidden="true" />
+            </button>
+          </div>
+          
+          <div class="quick-action-card card-questions">
+            <h3>Have questions first?</h3>
+            <ul class="question-topics">
+              <li>Weight Loss Consultation</li>
+              <li>Treatment Options</li>
+              <li>Prescription Queries</li>
+              <li>Delivery Information</li>
+            </ul>
+            <button class="cta-button secondary-cta" onclick="window.location.href='https://superior-pharmacy-we-z3k8.bolt.host/'">Speak to Our Team</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="contact-faq-section">
+      <div class="section-container contact-faq-container">
+        <div class="section-header">
+          <span class="section-label">COMMON QUESTIONS</span>
+          <h2>Frequently Asked Questions</h2>
+          <div class="decorative-divider">
+            <span class="divider-line"></span>
+            <span class="divider-dot"></span>
+            <span class="divider-line"></span>
+          </div>
+        </div>
+        
+        <div class="contact-faq-list">
+          <details class="contact-faq-item" open>
+            <summary>
+              <span>How does the eligibility check work?</span>
+              <svg class="contact-faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 5V19M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </summary>
+            <div class="contact-faq-answer">
+              <p>Our online eligibility checker is a quick, confidential assessment that takes about 2 minutes. You'll answer questions about your health, medical history, and weight goals. Our UK-registered independent prescribers will then review your answers to determine if prescription weight loss treatment is safe and suitable for you.</p>
+            </div>
+          </details>
+          
+          <details class="contact-faq-item">
+            <summary>
+              <span>What weight loss treatments are available?</span>
+              <svg class="contact-faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 5V19M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </summary>
+            <div class="contact-faq-answer">
+              <p>Superior Pharmacy offers UK-licensed prescription weight loss medications like Wegovy (semaglutide) and Mounjaro (tirzepatide). These are GLP-1 agonists proven to help with significant weight loss. Our prescribers will recommend the best option for you based on your individual profile.</p>
+            </div>
+          </details>
+          
+          <details class="contact-faq-item">
+            <summary>
+              <span>What is the consultation process like?</span>
+              <svg class="contact-faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 5V19M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </summary>
+            <div class="contact-faq-answer">
+              <p>Our consultations are 100% online. After completing your eligibility check, our independent prescribers will review your information. If approved, your prescription is issued. There are no video calls or in-person appointments required, making the process convenient and discreet.</p>
+            </div>
+          </details>
+          
+          <details class="contact-faq-item">
+            <summary>
+              <span>How is delivery handled, and is it discreet?</span>
+              <svg class="contact-faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 5V19M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </summary>
+            <div class="contact-faq-answer">
+              <p>Medication is dispatched same-day (if approved before 2pm Mon-Fri) via tracked Royal Mail. All packaging is discreet and unmarked, ensuring your privacy. Delivery typically occurs within 48 hours to any UK address.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom CTA Section -->
+    <section class="contact-bottom-cta-section">
+      <div class="section-container contact-bottom-cta-container">
+        <div class="bottom-cta-card">
+          <h2>Don't wait to transform your health</h2>
+          <p>Join thousands who've achieved their weight loss goals with Superior Pharmacy.</p>
+          <button class="cta-button gradient-cta" onclick="window.location.href='https://superior-pharmacy-we-z3k8.bolt.host/'">
+            Start Your Assessment
+            <img src="https://c.animaapp.com/mgyq65e6VP2ypA/img/arrowright.svg" alt="" aria-hidden="true" />
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-grid">
+          <div class="footer-column">
+            <img src="https://c.animaapp.com/mgyq65e6VP2ypA/img/cropped-superior-1.png" alt="Superior Pharmacy" class="footer-logo" />
+            <p class="footer-description">Superior Pharmacy provides online prescription weight loss services across the UK. GPhC registered and regulated.</p>
+            <div class="footer-address">
+              <p><strong>Registered Address:</strong></p>
+              <p>Superior Pharmacy<br />2A Hawes Close<br />Walsall, WS1 3HG<br />United Kingdom</p>
+            </div>
+          </div>
+          
+          <div class="footer-column">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="weight-management.html">Weight Management</a></li>
+              <li><a href="#wegovy">Wegovy</a></li>
+              <li><a href="mounjaro.html">Mounjaro</a></li>
+              <li><a href="#consultation">Online Consultation</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-column">
+            <h4>Information</h4>
+            <ul>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="#how-it-works">How It Works</a></li>
+              <li><a href="#faq">FAQ</a></li>
+              <li><a href="contact.html" aria-current="page">Contact Us</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-column">
+            <h4>Legal</h4>
+            <ul>
+              <li><a href="#privacy">Privacy Policy</a></li>
+              <li><a href="#terms">Terms & Conditions</a></li>
+              <li><a href="#complaints">Complaints Procedure</a></li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="footer-prescribers">
+          <h4>Our Prescribers</h4>
+          <p><strong>Superintendent Pharmacist:</strong> Raman Sangha (GPhC No.: 2085763)</p>
+          <p><strong>Clinical Lead:</strong> Resham Sira (GPhC No.: 2086835)</p>
+        </div>
+        
+        <div class="footer-bottom">
+          <p>&copy; 2025 Superior Pharmacy. All rights reserved. Registered with the General Pharmaceutical Council (GPhC).</p>
+          <p class="company-info">Superior Health Solutions Ltd | Company number: 15452156</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+    <script src="contact.js"></script>
+  </body>
+</html>

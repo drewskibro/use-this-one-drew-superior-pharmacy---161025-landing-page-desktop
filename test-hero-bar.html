@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hero Bar Test</title>
+  <link rel="stylesheet" href="globals.css" />
+  <link rel="stylesheet" href="responsive.css" />
+</head>
+<body>
+  <section class="hero-section" style="min-height: 50vh;">
+    <div class="hero-background"></div>
+    
+    <div class="hero-content" style="padding: 4rem 2rem 2rem;">
+      <div class="hero-text">
+        <h1>Test Hero Section</h1>
+        <p class="hero-subtitle">This is a test to see the benefits bar below</p>
+      </div>
+    </div>
+    
+    <!-- Hero Benefits Bar - Should appear here -->
+    <div class="hero-benefits-bar" style="background: red; min-height: 100px;">
+      <div class="hero-benefit-item">
+        <div class="hero-benefit-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 11L12 14L22 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M21 12V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="hero-benefit-text">
+          <span class="hero-benefit-title">Free Consultation</span>
+          <span class="hero-benefit-subtitle">Worth £150</span>
+        </div>
+      </div>
+      
+      <div class="hero-benefit-item">
+        <div class="hero-benefit-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+            <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="hero-benefit-text">
+          <span class="hero-benefit-title">Fast Start</span>
+          <span class="hero-benefit-subtitle">Within 48 hours</span>
+        </div>
+      </div>
+      
+      <div class="hero-benefit-item">
+        <div class="hero-benefit-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="3" y="11" width="18" height="11" rx="2" stroke="currentColor" stroke-width="2"/>
+            <path d="M7 11V7C7 5.67392 7.52678 4.40215 8.46447 3.46447C9.40215 2.52678 10.6739 2 12 2C13.3261 2 14.5979 2.52678 15.5355 3.46447C16.4732 4.40215 17 5.67392 17 7V11" stroke="currentColor" stroke-width="2"/>
+          </svg>
+        </div>
+        <div class="hero-benefit-text">
+          <span class="hero-benefit-title">Discreet</span>
+          <span class="hero-benefit-subtitle">Private delivery</span>
+        </div>
+      </div>
+      
+      <div class="hero-benefit-item">
+        <div class="hero-benefit-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21" stroke="currentColor" stroke-width="2"/>
+            <circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="2"/>
+          </svg>
+        </div>
+        <div class="hero-benefit-text">
+          <span class="hero-benefit-title">UK Pharmacists</span>
+          <span class="hero-benefit-subtitle">Licensed experts</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section style="padding: 4rem 2rem; background: white;">
+    <h2>Next Section</h2>
+    <p>The benefits bar should appear above this section</p>
+  </section>
+</body>
+</html>

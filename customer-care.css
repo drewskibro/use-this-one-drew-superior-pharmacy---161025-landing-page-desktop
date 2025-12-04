@@ -1,0 +1,518 @@
+/* Customer Care Page - Premium Redesign */
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* Hover Lift Effect */
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+}
+
+/* Policy Link Styles */
+.policy-link {
+  transition: all 0.3s ease;
+}
+
+.policy-link:hover {
+  background-color: rgba(224, 242, 241, 0.5);
+  transform: translateX(4px);
+}
+
+/* Active Link Styling */
+.active-link {
+  color: var(--primary-teal) !important;
+  font-weight: 700 !important;
+}
+
+/* Premium Hero Section */
+.customer-care-hero {
+  position: relative;
+  background: #eceae7;
+  padding: 10.625rem 2rem 6rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Animated Background Gradients */
+.customer-care-hero::before {
+  content: '';
+  position: absolute;
+  right: -100%;
+  bottom: -50%;
+  width: 200%;
+  height: 150%;
+  background: radial-gradient(circle, rgba(231, 206, 107, 0.39) 0%, transparent 38%);
+  pointer-events: none;
+  animation: floatGradient 20s ease-in-out infinite;
+}
+
+.customer-care-hero::after {
+  content: '';
+  position: absolute;
+  top: -30%;
+  left: -50%;
+  width: 120%;
+  height: 90%;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(0, 151, 178, 0.24) 0%, transparent 38%);
+  pointer-events: none;
+  animation: floatGradient 25s ease-in-out infinite reverse;
+}
+
+@keyframes floatGradient {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(-30px, -30px) scale(1.05);
+  }
+}
+
+.customer-care-hero-content {
+  max-width: 75rem;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.customer-care-hero .section-label {
+  display: inline-block;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 700;
+  font-size: 0.875rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--primary-teal);
+  margin-bottom: 1.5rem;
+}
+
+.customer-care-hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  font-size: 5rem;
+  line-height: 1.1;
+  color: var(--text-dark);
+  margin: 0 auto 2rem;
+  max-width: 62.5rem;
+  letter-spacing: -0.02em;
+}
+
+.customer-care-hero-subtitle {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: #495565;
+  margin: 0 auto;
+  max-width: 50rem;
+  font-weight: 400;
+}
+
+/* Premium Content Section */
+.customer-care-content {
+  background: var(--white);
+  padding: 6rem 2rem;
+}
+
+.customer-care-container {
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+/* Quick Support Grid - Premium Styling */
+.quick-support-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  margin-bottom: 5rem;
+}
+
+.support-card {
+  background: var(--white);
+  border: 1px solid #e5e7eb;
+  border-radius: 1.5rem;
+  padding: 3rem;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.support-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-teal) 0%, #00b5a4 100%);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+
+.support-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 150, 137, 0.12);
+  border-color: rgba(0, 150, 137, 0.2);
+}
+
+.support-card:hover::before {
+  transform: scaleX(1);
+}
+
+.support-icon {
+  width: 5rem;
+  height: 5rem;
+  background: linear-gradient(135deg, rgba(0, 150, 137, 0.08) 0%, rgba(0, 181, 164, 0.12) 100%);
+  border-radius: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 2rem;
+  transition: all 0.3s ease;
+}
+
+.support-card:hover .support-icon {
+  background: linear-gradient(135deg, var(--primary-teal) 0%, #00b5a4 100%);
+  transform: scale(1.05);
+}
+
+.support-icon svg {
+  width: 2.5rem;
+  height: 2.5rem;
+  color: var(--primary-teal);
+  transition: color 0.3s ease;
+}
+
+.support-card:hover .support-icon svg {
+  color: var(--white);
+}
+
+.support-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 1.75rem;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.support-card p {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  color: var(--text-gray);
+}
+
+/* Policy Links Card - Premium Styling */
+.policy-links-card {
+  background: var(--white);
+  border: 1px solid #e5e7eb;
+  border-radius: 1.5rem;
+  padding: 3rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  margin-bottom: 5rem;
+}
+
+.policy-links-card h3 {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 700;
+  font-size: 0.875rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--primary-teal);
+  margin-bottom: 2rem;
+}
+
+.policy-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 1rem;
+  border-bottom: 1px solid #e5e7eb;
+  transition: all 0.3s ease;
+  border-radius: 0.75rem;
+  margin: 0 -1rem;
+}
+
+.policy-link:last-child {
+  border-bottom: none;
+}
+
+.policy-link:hover {
+  background: rgba(224, 242, 241, 0.5);
+  transform: translateX(4px);
+  padding-left: 1.5rem;
+}
+
+.policy-link-content {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.policy-icon {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: #f9fafb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.policy-link:hover .policy-icon {
+  background: var(--white);
+}
+
+.policy-icon svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: #495565;
+  transition: color 0.3s ease;
+}
+
+.policy-link:hover .policy-icon svg {
+  color: var(--primary-teal);
+}
+
+.policy-link-text {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--text-dark);
+  transition: color 0.3s ease;
+}
+
+.policy-link:hover .policy-link-text {
+  color: var(--primary-teal);
+}
+
+.policy-arrow {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #495565;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.policy-link:hover .policy-arrow {
+  color: var(--primary-teal);
+  transform: translateX(4px);
+}
+
+/* Help Card - Premium Styling */
+.help-card {
+  background: linear-gradient(135deg, rgba(0, 150, 137, 0.03) 0%, rgba(0, 181, 164, 0.05) 100%);
+  border: 1px solid rgba(0, 150, 137, 0.15);
+  border-radius: 2rem;
+  padding: 4rem 3rem;
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(0, 150, 137, 0.08);
+  position: relative;
+  overflow: hidden;
+}
+
+.help-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-teal) 0%, #00b5a4 50%, #0077b6 100%);
+}
+
+.help-card-avatars {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.avatar-group {
+  display: flex;
+  margin-left: -0.75rem;
+}
+
+.avatar-item {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  border: 4px solid var(--white);
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  margin-left: -0.75rem;
+}
+
+.avatar-item:first-child {
+  margin-left: 0;
+}
+
+.avatar-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.avatar-count {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  border: 4px solid var(--white);
+  background: #e0f2f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 700;
+  font-size: 0.875rem;
+  color: var(--primary-teal);
+  margin-left: -0.75rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.help-card h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: var(--text-dark);
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.help-card-description {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--text-gray);
+  margin: 0 auto 2.5rem;
+  max-width: 40rem;
+}
+
+.help-card .cta-button {
+  padding: 1.125rem 2.5rem;
+  font-size: 1.125rem;
+}
+
+.help-card-note {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 0.875rem;
+  color: var(--text-gray);
+  margin-top: 1.5rem;
+  font-weight: 500;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .quick-support-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .customer-care-hero {
+    padding: 6rem 1.25rem 4rem;
+  }
+  
+  .customer-care-hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .customer-care-hero-subtitle {
+    font-size: 1rem;
+  }
+  
+  .customer-care-content {
+    padding: 4rem 1.25rem;
+  }
+  
+  .quick-support-grid {
+    gap: 1.5rem;
+  }
+  
+  .support-card {
+    padding: 2rem;
+  }
+  
+  .support-icon {
+    width: 4rem;
+    height: 4rem;
+  }
+  
+  .support-icon svg {
+    width: 2rem;
+    height: 2rem;
+  }
+  
+  .support-card h3 {
+    font-size: 1.5rem;
+  }
+  
+  .support-card p {
+    font-size: 0.9375rem;
+  }
+  
+  .policy-links-card {
+    padding: 2rem;
+  }
+  
+  .policy-link {
+    padding: 1.25rem 0.75rem;
+  }
+  
+  .policy-link-text {
+    font-size: 1rem;
+  }
+  
+  .help-card {
+    padding: 3rem 1.5rem;
+  }
+  
+  .help-card h2 {
+    font-size: 2rem;
+  }
+  
+  .help-card-description {
+    font-size: 1rem;
+  }
+  
+  .avatar-item,
+  .avatar-count {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+/* Ensure Tailwind utilities work with existing CSS variables */
+:root {
+  --primary-teal: #009689;
+  --primary-blue: #0077b6;
+  --text-dark: #282832;
+  --text-gray: #495565;
+  --bg-cream: #f5f3f0;
+  --border-light: #e7e2da;
+  --white: #ffffff;
+}

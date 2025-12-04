@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <title>Health Hub | Superior Pharmacy | Weight Loss Insights</title>
+    <meta name="description" content="Expert articles, guides, and success stories from Superior Pharmacy to support your weight loss journey." />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <link rel="stylesheet" href="health-hub.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "gray0-white": "var(--gray0-white)",
+            },
+          },
+        },
+        plugins: [],
+      };
+    </script>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="main-nav" role="navigation" aria-label="Main navigation">
+      <div class="nav-container">
+        <img src="https://c.animaapp.com/mgyq65e6VP2ypA/img/cropped-superior-1.png" alt="Superior Pharmacy Logo" class="logo" />
+        
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <div class="nav-dropdown">
+            <button class="nav-dropdown-btn" aria-expanded="false" aria-haspopup="true">
+              About us
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="nav-dropdown-menu">
+              <a href="about.html">About Us</a>
+              <a href="resources.html">Resources</a>
+              <a href="customer-care.html">Customer Care</a>
+            </div>
+          </div>
+          <a href="weight-management.html">Weight Management</a>
+          <div class="nav-dropdown">
+            <button class="nav-dropdown-btn" aria-expanded="false" aria-haspopup="true">
+              Treatments
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="nav-dropdown-menu">
+              <a href="all-treatments.html">All treatments</a>
+              <a href="mounjaro.html">Mounjaro</a>
+              <a href="wegovy.html">Wegovy</a>
+              <a href="#switching-providers">Switching Providers</a>
+            </div>
+          </div>
+          <a href="health-hub.html" aria-current="page">Health Hub</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+          
+        <button class="cta-button primary-cta desktop-cta" aria-label="Start your assessment" onclick="window.location.href='https://superior-pharmacy-we-z3k8.bolt.host/'">
+          Start Your Assessment
+          <img src="https://c.animaapp.com/mgyq65e6VP2ypA/img/arrowright.svg" alt="" aria-hidden="true" />
+        </button>
+          
+          <!-- Mobile Menu Button -->
+          <button class="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu">
+        <div class="mobile-menu-links">
+          <a href="index.html">Home</a>
+          <details class="mobile-dropdown">
+            <summary>About us</summary>
+            <div class="mobile-dropdown-content">
+              <a href="about.html">About Us</a>
+              <a href="resources.html">Resources</a>
+              <a href="customer-care.html">Customer Care</a>
+            </div>
+          </details>
+          <a href="weight-management.html">Weight Management</a>
+          <details class="mobile-dropdown">
+            <summary>Treatments</summary>
+            <div class="mobile-dropdown-content">
+              <a href="all-treatments.html">All treatments</a>
+              <a href="mounjaro.html">Mounjaro</a>
+              <a href="wegovy.html">Wegovy</a>
+              <a href="#switching-providers">Switching Providers</a>
+            </div>
+          </details>
+          <a href="health-hub.html" aria-current="page">Health Hub</a>
+          <a href="contact.html">Contact Us</a>
+          <button class="cta-button primary-cta mobile-cta" onclick="window.location.href='https://superior-pharmacy-we-z3k8.bolt.host/'">
+            Start Your Assessment
+            <img src="https://c.animaapp.com/mgyq65e6VP2ypA/img/arrowright.svg" alt="" aria-hidden="true" />
+          </button>
+          </div>
+        </div>
+      </nav>
+
+    <!-- Health Hub Hero Section - Journey Tracker -->
+    <section class="health-hub-hero-section">
+      <div class="section-container health-hub-hero-container">
+        <span class="section-label">YOUR PERSONALIZED JOURNEY</span>
+        <h1>Track your progress, unlock insights, and stay motivated</h1>
+        <p class="hero-subtitle">Select your current stage to get tailored content and support for your weight loss journey.</p>
+        
+        <div class="journey-tracker-wrapper">
+          <div class="journey-tracker-stages" role="tablist" aria-label="Select your journey stage">
+            <button class="stage-button active" data-stage="starting-out" role="tab" aria-selected="true" aria-controls="content-starting-out">
+              Starting Out
+            </button>
+            <button class="stage-button" data-stage="week-1-4" role="tab" aria-selected="false" aria-controls="content-week-1-4">
+              Week 1-4
+            </button>
+            <button class="stage-button" data-stage="plateau-breaker" role="tab" aria-selected="false" aria-controls="content-plateau-breaker">
+              Plateau Breaker
+            </button>
+            <button class="stage-button" data-stage="maintaining" role="tab" aria-selected="false" aria-controls="content-maintaining">
+              Maintaining
+            </button>
+          </div>
+          
+          <div class="progress-visualization">
+            <div class="progress-bar">
+              <div class="progress-fill"></div>
+            </div>
+            <div class="progress-milestones">
+              <span class="milestone active" data-milestone="starting-out"></span>
+              <span class="milestone" data-milestone="week-1-4"></span>
+              <span class="milestone" data-milestone="plateau-breaker"></span>
+              <span class="milestone" data-milestone="maintaining"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Real-Time Support Ticker -->
+    <section class="real-time-support-section">
+      <div class="section-container real-time-support-container">
+        <div class="real-time-ticker">
+          <span class="ticker-label">LIVE COMMUNITY UPDATES:</span>
+          <div class="ticker-messages-wrapper">
+            <div class="ticker-messages">
+              <div class="ticker-message">Sarah just lost 2kg this week! 🎉</div>
+              <div class="ticker-message">Our prescriber answered a question about nausea. 💬</div>
+              <div class="ticker-message">45 people reading about Mounjaro right now. 📈</div>
+              <div class="ticker-message">New quick tip: "Hydration Hacks for Weight Loss." 💧</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Content Presentation - Story Feed -->
+    <section class="story-feed-section">
+      <div class="section-container story-feed-container">
+        <div class="story-feed-grid">
+          <!-- Story Card: Quick Tip (Starting Out) -->
+          <article class="story-card story-card-quick-tip" data-type="quick-tip" data-stage="starting-out" role="tabpanel" id="content-starting-out">
+            <div class="story-header">
+              <span class="story-category">Quick Tip</span>
+              <div class="story-progress-indicator">
+                <span class="progress-dot active"></span>
+                <span class="progress-dot"></span>
+                <span class="progress-dot"></span>
+              </div>
+              <button class="save-journey-btn" aria-label="Save to my journey">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19 21L12 16L5 21V5C5 4.46957 5.21071 3.96086 5.58579 3.58579C5.96086 3.21071 6.46957 3 7 3H17C17.5304 3 18.0391 3.21071 18.4142 3.58579C18.7893 3.96086 19 4.46957 19 5V21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+            <div class="story-frames">
+              <div class="story-frame active">
+                <div class="story-content">
+                  <h3>Mastering Portion Control</h3>
+                  <p>Start by using smaller plates and measuring your food. It's a simple visual trick that can make a big difference!</p>
+                </div>
+                <div class="story-footer">
+                  <span class="read-time">1/3</span>
+                  <button class="frame-nav-btn next" aria-label="Next tip">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="story-frame">
+                <div class="story-content">
+                  <h3>Mindful Eating Practice</h3>
+                  <p>Eat slowly, savor each bite, and pay attention to your body's hunger and fullness cues. Avoid distractions!</p>
+                </div>
+                <div class="story-footer">
+                  <span class="read-time">2/3</span>
+                  <button class="frame-nav-btn prev" aria-label="Previous tip">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </button>
+                  <button class="frame-nav-btn next" aria-label="Next tip">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="story-frame">
+                <div class="story-content">
+                  <h3>Track Your Intake</h3>
+                  <p>Briefly logging your meals can increase awareness and help you identify patterns. No need for perfection!</p>
+                </div>
+                <div class="story-footer">
+                  <span class="read-time">3/3</span>
+                  <button class="frame-nav-btn prev" aria-label="Previous tip">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Story Card: Success Story (Week 1-4) -->
+          <article class="story-card story-card-success-story" data-type="success-story" data-stage="week-1-4" style="display: none;">
+            <div class="story-header">
+              <span class="story-category">Success Story</span>
+              <button class="save-journey-btn" aria-label="Save to my journey">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19 21L12 16L5 21V5C5 4.46957 5.21071 3.96086 5.58579 3.58579C5.96086 3.21071 6.46957 3 7 3H17C17.5304 3 18.0391 3.21071 18.4142 3.58579C18.7893 3.96086 19 4.46957 19 5V21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+            <div class="story-image-slider">
+              <div class="slider-before">
+                <img src="https://images.unsplash.com/photo-1534237710431-e2fc698436d1?auto=format&fit=crop&w=400&h=300&q=80" alt="Before weight loss" />
+                <span>Before</span>
+              </div>
+              <div class="slider-after">
+                <img src="https://images.unsplash.com/photo-1579684385127-a866df37dc8f?auto=format&fit=crop&w=400&h=300&q=80" alt="After weight loss" />
+                <span>After</span>
+              </div>
+              <input type="range" min="0" max="100" value="50" class="slider-control" aria-label="Before and after slider" />
+            </div>
+            <div class="story-content">
+              <h3>Sarah's First 4 Weeks: Down 5kg!</h3>
+              <p>Sarah shares her initial success, feeling more energetic and confident. "The support made all the difference!"</p>
+            </div>
+            <div class="story-footer">
+              <span class="read-time">2 min read</span>
+              <a href="#" class="story-link">Read Full Story</a>
+            </div>
+          </article>
+
+          <!-- Story Card: Video Consultation (Plateau Breaker) -->
+          <article class="story-card story-card-video" data-type="video" data-stage="plateau-breaker" style="display: none;">
+            <div class="story-header">
+              <span class="story-category">Video Guide</span>
+              <button class="save-journey-btn" aria-label="Save to my journey">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19 21L12 16L5 21V5C5 4.46957 5.21071 3.96086 5.58579 3.58579C5.96086 3.21071 6.46957 3 7 3H17C17.5304 3 18.0391 3.21071 18.4142 3.58579C18.7893 3.96086 19 4.46957 19 5V21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+            <div class="story-video-embed">
+              <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="story-content">
+              <h3>Breaking Through Weight Loss Plateaus</h3>
+              <p>Watch our prescriber explain common reasons for plateaus and strategies to overcome them.</p>
+            </div>
+            <div class="story-footer">
+              <span class="read-time">5 min watch</span>
+              <a href="#" class="story-link">Watch Now</a>
+            </div>
+          </article>
+
+          <!-- Story Card: Interactive Calculator (Maintaining) -->
+          <article class="story-card story-card-calculator" data-type="calculator" data-stage="maintaining" style="display: none;">
+            <div class="story-header">
+              <span class="story-category">Interactive Tool</span>
+              <button class="save-journey-btn" aria-label="Save to my journey">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19 21L12 16L5 21V5C5 4.46957 5.21071 3.96086 5.58579 3.58579C5.96086 3.21071 6.46957 3 7 3H17C17.5304 3 18.0391 3.21071 18.4142 3.58579C18.7893 3.96086 19 4.46957 19 5V21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+            <div class="story-content">
+              <h3>Maintain Your Goal Weight Calculator</h3>
+              <p>Input your current weight and activity to get personalized calorie and macro targets for maintenance.</p>
+              <div class="calculator-widget-embed">
+                <!-- Simplified calculator embed -->
+                <label for="maintain-weight">Current Weight (kg):</label>
+                <input type="number" id="maintain-weight" value="70" min="40" max="150" />
+                <p>Target Calories: <span id="maintain-calories">2000</span></p>
+                <button class="cta-button primary-cta small-cta">Calculate</button>
+              </div>
+            </div>
+            <div class="story-footer">
+              <span class="read-time">5 min tool</span>
+            </div>
+          </article>
+
+          <!-- Story Card: Large Featured Article (Starting Out) -->
+          <article class="story-card story-card-large" data-type="featured-article" data-stage="starting-out">
+            <div class="story-header">
+              <span class="story-category">Featured Guide</span>
+              <button class="save-journey-btn" aria-label="Save to my journey">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19 21L12 16L5 21V5C5 4.46957 5.21071 3.96086 5.58579 3.58579C5.96086 3.21071 6.46957 3 7 3H17C17.5304 3 18.0391 3.21071 18.4142 3.58579C18.7893 3.96086 19 4.46957 19 5V21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+            <div class="story-image">
+              <img src="https://images.unsplash.com/photo-1542838132-9255b764793c?auto=format&fit=crop&w=800&h=500&q=80" alt="Healthy eating guide" />
+            </div>
+            <div class="story-content">
+              <h3>Your First Steps to Sustainable Weight Loss</h3>
+              <p>A comprehensive guide covering everything from setting realistic goals to understanding your medication and building healthy habits.</p>
+            </div>
+            <div class="story-footer">
+              <span class="read-time">10 min read</span>
+              <a href="#" class="story-link">Read Full Guide</a>
+            </div>
+          </article>
+
+          <!-- More Story Cards (hidden by default, loaded by JS) -->
+          <!-- Quick Tip (Week 1-4) -->
+          <article class="story-card story-card-quick-tip" data-type="quick-tip" data-stage="week-1-4" style="display: none;">
+            <div class="story-header">
+              <span class="story-category">Quick Tip</span>
+              <div class="story-progress-indicator">
+                <span class="progress-

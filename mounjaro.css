@@ -1,0 +1,1006 @@
+/* ===================================
+   MOUNJARO PRODUCT PAGE STYLES
+   =================================== */
+
+/* Hero Section */
+.mounjaro-hero-section {
+  background: var(--white);
+  padding: 10.625rem 2rem 4rem;
+}
+
+.mounjaro-hero-container {
+  max-width: 90rem;
+  margin: 0 auto;
+}
+
+.mounjaro-hero-content {
+  display: grid;
+  grid-template-columns: 60fr 40fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+/* Breadcrumb */
+.mounjaro-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 0.875rem;
+  color: var(--text-gray);
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.mounjaro-breadcrumb a {
+  color: var(--text-gray);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.mounjaro-breadcrumb a:hover {
+  color: var(--primary-teal);
+}
+
+.mounjaro-breadcrumb span[aria-current] {
+  color: var(--text-dark);
+  font-weight: 600;
+}
+
+/* Badge */
+.mounjaro-badge {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: linear-gradient(135deg, rgba(0, 150, 137, 0.1) 0%, rgba(0, 181, 164, 0.15) 100%);
+  border: 1px solid var(--primary-teal);
+  border-radius: 2rem;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 700;
+  font-size: 0.875rem;
+  color: var(--primary-teal);
+  margin-bottom: 1.5rem;
+}
+
+/* Product Title */
+.mounjaro-hero-left h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 4.5rem;
+  line-height: 1.1;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+/* Unified Rating Display */
+.mounjaro-rating-unified {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: flex-start; /* Align to the left */
+  gap: 0.25rem; /* Reduced gap for tighter grouping */
+  margin-bottom: 1.5rem;
+}
+
+.mounjaro-rating-unified .mounjaro-stars img {
+  height: 1.5rem; /* Keep star size consistent */
+  margin-bottom: 0.25rem; /* Small gap below stars */
+}
+
+.mounjaro-overall-rating {
+  font-family: 'Playfair Display', serif; /* Use a strong, elegant font */
+  font-weight: 700;
+  font-size: 1.5rem; /* Make this prominent */
+  color: var(--primary-teal); /* Highlight with brand color */
+  line-height: 1.2;
+}
+
+.mounjaro-review-count {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 0.9375rem;
+  color: var(--text-gray);
+  font-weight: 500;
+}
+
+/* Trust Banner */
+.mounjaro-trust-banner {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 1.5rem;
+  background: rgba(0, 150, 137, 0.08);
+  border-left: 4px solid var(--primary-teal);
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.mounjaro-trust-banner svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: var(--primary-teal);
+  flex-shrink: 0;
+}
+
+.mounjaro-trust-banner span {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  color: var(--text-dark);
+}
+
+/* Description */
+.mounjaro-description {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: var(--text-gray);
+  margin-bottom: 1.5rem;
+}
+
+/* Trust Chips (replacing old links) */
+.mounjaro-trust-chips {
+  display: flex;
+  flex-wrap: wrap; /* Allow chips to wrap on smaller screens */
+  gap: 0.75rem; /* Spacing between chips */
+  margin-bottom: 2rem;
+}
+
+.trust-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.625rem 1rem; /* Adjusted padding for chip size */
+  background: rgba(0, 150, 137, 0.05); /* Light background */
+  border: 1px solid rgba(0, 150, 137, 0.1); /* Subtle border */
+  border-radius: 2rem; /* Pill shape */
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 600;
+  font-size: 0.875rem; /* Readable font size */
+  color: var(--primary-teal); /* Brand color for text */
+  white-space: nowrap; /* Prevent text wrapping within a chip */
+  transition: all 0.2s ease;
+}
+
+.trust-chip:hover {
+  background: rgba(0, 150, 137, 0.1);
+  transform: translateY(-1px);
+}
+
+.trust-chip svg {
+  width: 1rem; /* Icon size */
+  height: 1rem; /* Icon size */
+  color: var(--primary-teal); /* Brand color for icon */
+  flex-shrink: 0; /* Prevent icon from shrinking */
+}
+
+/* Benefits List */
+.mounjaro-benefits {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 3rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.mounjaro-benefits li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--text-dark);
+}
+
+.mounjaro-benefits li svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: var(--primary-teal);
+  flex-shrink: 0;
+}
+
+/* Dosage Section */
+.mounjaro-dosage-section {
+  background: var(--bg-cream);
+  border-radius: 1.5rem;
+  padding: 2.5rem;
+  margin-top: 2rem;
+}
+
+.mounjaro-dosage-section h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--text-dark);
+  margin-bottom: 1.5rem;
+  text-align: center; /* Center the new heading */
+}
+
+.mounjaro-dosage-info-banner {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 1.5rem;
+  background: rgba(0, 150, 137, 0.08);
+  border-left: 4px solid var(--primary-teal);
+  border-radius: 0.5rem;
+  margin-bottom: 2rem; /* Increased margin for spacing */
+}
+
+.mounjaro-dosage-info-banner svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: var(--primary-teal);
+  flex-shrink: 0;
+}
+
+.mounjaro-dosage-info-banner span {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  color: var(--text-dark);
+}
+
+.mounjaro-dosage-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.mounjaro-dosage-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1.5rem 1rem;
+  background: var(--white);
+  border: 2px solid var(--border-light);
+  border-radius: 1rem;
+  /* Removed interactive styles */
+  cursor: default; /* Indicate non-interactiveness */
+  transition: none; /* Remove hover transition */
+  min-height: 8rem; /* Ensure consistent height */
+  text-align: center;
+}
+
+/* Removed .mounjaro-dosage-btn:hover and .mounjaro-dosage-btn.active styles */
+
+.dosage-amount {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--text-dark);
+}
+
+.dosage-pens {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 0.875rem;
+  color: var(--text-gray);
+}
+
+.dosage-price {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: var(--primary-teal);
+  margin-top: 0.5rem; /* Spacing between pens and price */
+}
+
+.mounjaro-cta {
+  margin-bottom: 0.75rem;
+}
+
+.mounjaro-cta-subtext {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 0.9375rem;
+  color: var(--text-gray);
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.mounjaro-pharmacy-text {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 0.875rem;
+  color: var(--text-gray);
+  text-align: center;
+  font-style: italic;
+}
+
+/* Product Image & Stats */
+.mounjaro-hero-right {
+  position: sticky;
+  top: 8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.mounjaro-product-image {
+  background: var(--white);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.mounjaro-product-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 1rem;
+}
+
+/* Stats Card - Homepage Style */
+.mounjaro-stats-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 
+    0 2px 8px rgba(0, 0, 0, 0.06),
+    0 8px 24px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.mounjaro-stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.mounjaro-stat-number {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: var(--text-dark);
+  line-height: 1;
+}
+
+.mounjaro-stat-label {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 0.875rem;
+  color: #495565;
+  font-weight: 500;
+  text-align: center;
+}
+
+.mounjaro-stat-rating {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.mounjaro-mini-stars {
+  height: 1.25rem;
+  width: auto;
+}
+
+.mounjaro-stat-divider {
+  width: 100%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+/* Trust Badges */
+.mounjaro-trust-badges {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.mounjaro-trust-badge-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: #495565;
+  padding: 0.75rem 1rem;
+  background: rgba(0, 150, 137, 0.05); /* Light background */
+  border: 1px solid rgba(0, 150, 137, 0.1); /* Subtle border */
+  border-radius: 0.75rem; /* Rounded corners */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04); /* Subtle depth */
+  transition: all 0.3s ease; /* Smooth transitions for hover */
+}
+
+.mounjaro-trust-badge-item:hover {
+  transform: translateY(-2px); /* Slight lift on hover */
+  box-shadow: 0 4px 12px rgba(0, 150, 137, 0.1); /* Enhanced shadow on hover */
+  background: rgba(0, 150, 137, 0.08); /* Slightly darker background on hover */
+}
+
+.mounjaro-trust-badge-item svg {
+  width: 1.25rem; /* Slightly larger icon */
+  height: 1.25rem; /* Slightly larger icon */
+  color: var(--primary-teal);
+  flex-shrink: 0;
+}
+
+/* Reviews Section */
+.mounjaro-reviews-section {
+  background: linear-gradient(180deg, #fef9f5 0%, #ffffff 100%);
+  padding: 6rem 2rem;
+}
+
+.mounjaro-reviews-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.mounjaro-reviews-stars {
+  margin-top: 1rem;
+}
+
+.mounjaro-reviews-stars img {
+  height: 2rem;
+}
+
+.mounjaro-reviews-carousel {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 1rem;
+}
+
+.mounjaro-review-card {
+  background: var(--white);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  scroll-snap-align: start;
+  min-width: 280px;
+}
+
+.mounjaro-review-stars img {
+  height: 1.25rem;
+}
+
+.mounjaro-review-card blockquote {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-dark);
+  flex: 1;
+}
+
+.mounjaro-review-author {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-light);
+}
+
+.mounjaro-review-initials {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary-teal) 0%, #00b5a4 100%); /* Gradient background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-family: 'Playfair Display', serif; /* Elegant font for initials */
+  font-weight: 700;
+  font-size: 1.25rem; /* Prominent size */
+  color: var(--white); /* White text for contrast */
+  box-shadow: 0 2px 8px rgba(0, 150, 137, 0.2); /* Subtle shadow */
+}
+
+.mounjaro-review-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.review-name {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--text-dark);
+}
+
+.review-verified {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 700;
+  font-size: 0.75rem;
+  color: var(--primary-teal);
+  letter-spacing: 0.05em;
+}
+
+.review-verified svg {
+  width: 0.875rem;
+  height: 0.875rem;
+}
+
+/* Why Choose Section */
+.mounjaro-why-section {
+  background: linear-gradient(135deg, rgba(0, 150, 137, 0.03) 0%, rgba(0, 181, 164, 0.05) 100%);
+  padding: 6rem 2rem;
+}
+
+.mounjaro-why-section h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 3.75rem;
+  color: var(--text-dark);
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.mounjaro-why-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+.mounjaro-why-card {
+  background: var(--white);
+  border-radius: 1.5rem;
+  padding: 3rem;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s;
+}
+
+.mounjaro-why-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 150, 137, 0.12);
+}
+
+.mounjaro-why-icon {
+  width: 5rem;
+  height: 5rem;
+  background: linear-gradient(135deg, rgba(0, 150, 137, 0.08) 0%, rgba(0, 181, 164, 0.12) 100%);
+  border-radius: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 2rem;
+}
+
+.mounjaro-why-icon svg {
+  width: 2.5rem;
+  height: 2.5rem;
+  color: var(--primary-teal);
+}
+
+.mounjaro-why-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 1.75rem;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+.mounjaro-why-card p {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  color: var(--text-gray);
+}
+
+/* What's Included Section */
+.mounjaro-included-section {
+  background: var(--white);
+  padding: 6rem 2rem;
+}
+
+.mounjaro-included-section h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 3.75rem;
+  color: var(--text-dark);
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.mounjaro-included-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+.mounjaro-included-card {
+  background: var(--white);
+  border: 1px solid var(--border-light);
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s;
+  position: relative;
+}
+
+.mounjaro-included-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 150, 137, 0.12);
+}
+
+.mounjaro-card-number {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  width: 3rem;
+  height: 3rem;
+  background: var(--primary-teal);
+  color: var(--white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  z-index: 1;
+}
+
+.mounjaro-card-image {
+  width: 100%;
+  height: 14rem;
+  overflow: hidden;
+}
+
+.mounjaro-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.mounjaro-included-card:hover .mounjaro-card-image img {
+  transform: scale(1.05);
+}
+
+.mounjaro-included-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 1.75rem;
+  color: var(--text-dark);
+  padding: 2rem 2rem 1rem;
+}
+
+.mounjaro-card-list {
+  list-style: none;
+  padding: 0 2rem 2rem;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.mounjaro-card-list li {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--text-gray);
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.mounjaro-card-list li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--primary-teal);
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+/* FAQ Section */
+.mounjaro-faq-section {
+  background: linear-gradient(180deg, #fef9f5 0%, #ffffff 100%);
+  padding: 6rem 2rem;
+}
+
+.mounjaro-faq-container {
+  max-width: 62.5rem;
+}
+
+.mounjaro-faq-section h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 3.75rem;
+  color: var(--text-dark);
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.mounjaro-faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.mounjaro-faq-item {
+  background: var(--white);
+  border-radius: 1rem;
+  overflow: hidden;
+  border: 1px solid var(--border-light);
+}
+
+.mounjaro-faq-item summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem;
+  cursor: pointer;
+  list-style: none;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: var(--text-dark);
+  transition: background 0.3s;
+}
+
+.mounjaro-faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.mounjaro-faq-item summary:hover {
+  background: rgba(0, 150, 137, 0.05);
+}
+
+.mounjaro-faq-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: var(--primary-teal);
+  transition: transform 0.3s;
+  flex-shrink: 0;
+}
+
+.mounjaro-faq-item[open] .mounjaro-faq-icon {
+  transform: rotate(45deg);
+}
+
+.mounjaro-faq-answer {
+  padding: 0 1.5rem 1.5rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.mounjaro-faq-answer p {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--text-gray);
+  margin-top: 1rem;
+}
+
+/* Email Sign-up Section */
+.mounjaro-signup-section {
+  background: var(--white);
+  padding: 6rem 2rem;
+}
+
+.mounjaro-signup-content {
+  display: grid;
+  grid-template-columns: 40fr 60fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+.mounjaro-signup-image {
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.mounjaro-signup-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.mounjaro-signup-logo {
+  height: 3rem;
+  margin-bottom: 2rem;
+}
+
+.mounjaro-signup-right h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 3rem;
+  color: var(--text-dark);
+  margin-bottom: 3rem;
+  line-height: 1.2;
+}
+
+.mounjaro-signup-benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.mounjaro-signup-benefit {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.mounjaro-benefit-number {
+  width: 3rem;
+  height: 3rem;
+  background: var(--primary-teal);
+  color: var(--white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+.mounjaro-benefit-content h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--text-dark);
+  margin-bottom: 0.75rem;
+}
+
+.mounjaro-benefit-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.mounjaro-benefit-content li {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-gray);
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.mounjaro-benefit-content li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--primary-teal);
+  font-weight: 700;
+}
+
+.mounjaro-signup-form {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.mounjaro-signup-form input {
+  flex: 1;
+  padding: 1rem 1.5rem;
+  border: 2px solid var(--border-light);
+  border-radius: 0.75rem;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.mounjaro-signup-form input:focus {
+  outline: none;
+  border-color: var(--primary-teal);
+}
+
+.mounjaro-signup-disclaimer {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 0.875rem;
+  color: var(--text-gray);
+  margin-bottom: 2rem;
+}
+
+/* Removed .mounjaro-signup-trust, .mounjaro-signup-rating, .mounjaro-trust-logos styles */
+/* as these elements are no longer present in the HTML */
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .mounjaro-hero-content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  
+  .mounjaro-hero-right {
+    position: static;
+  }
+  
+  .mounjaro-why-grid,
+  .mounjaro-included-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .mounjaro-signup-content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .mounjaro-reviews-carousel {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .mounjaro-hero-section {
+    padding: 6rem 1.25rem 3rem;
+  }
+  
+  .mounjaro-hero-left h1 {
+    font-size: 2.5rem;
+  }
+  
+  .mounjaro-dosage-section {
+    padding: 2rem;
+  }
+  
+  .mounjaro-dosage-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .mounjaro-reviews-carousel {
+    grid-template-columns: 1fr;
+  }
+  
+  .mounjaro-why-section h2,
+  .mounjaro-included-section h2,
+  .mounjaro-faq-section h2 {
+    font-size: 2rem;
+  }
+  
+  .mounjaro-signup-right h2 {
+    font-size: 2rem;
+  }
+  
+  .mounjaro-signup-form {
+    flex-direction: column;
+  }
+  
+  /* Mobile adjustments for new stats card */
+  .mounjaro-stats-card {
+    padding: 1.5rem;
+    gap: 1rem;
+  }
+  
+  .mounjaro-stat-number {
+    font-size: 2rem;
+  }
+  
+  .mounjaro-stat-label {
+    font-size: 0.75rem;
+  }
+  
+  .mounjaro-mini-stars {
+    height: 1rem;
+  }
+  
+  .mounjaro-trust-badges {
+    gap: 0.75rem;
+  }
+  
+  .mounjaro-trust-badge-item {
+    padding: 0.625rem 0.875rem;
+    font-size: 0.75rem;
+  }
+  
+  .mounjaro-trust-badge-item svg {
+    width: 1rem;
+    height: 1rem;
+  }
+}
